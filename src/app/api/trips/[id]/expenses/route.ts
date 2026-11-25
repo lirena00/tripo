@@ -37,7 +37,8 @@ export async function POST(
       return Response.json({ error: 'Some members not found in this trip' }, { status: 400 })
     }
 
-    const shares = computeShares(amountPaise, splitType, splitAmong, splitValues)
+    const tripMembers = members.map((m) => m.id)
+    const shares = computeShares(amountPaise, { splitType, splitAmong, splitValues }, tripMembers)
 
     const expense = await db.expense.create({
       data: {
@@ -46,7 +47,6 @@ export async function POST(
         amountPaise,
         category,
         description,
-        splitType,
         shares: {
           create: shares.map((s) => ({
             memberId: s.memberId,

@@ -46,7 +46,14 @@ export async function GET(
 
     const payments = mode === 'greedy' ? greedySettle(balances) : optimalSettle(balances)
     const greedyCount = greedySettle(balances).length
-    const naiveCount = naivePairwiseCount(balances)
+
+    const expensesForNaive = trip.expenses.map((e) => ({
+      id: e.id,
+      paidById: e.paidById,
+      amountPaise: e.amountPaise,
+      shares: e.shares,
+    }))
+    const naiveCount = naivePairwiseCount(expensesForNaive)
 
     return Response.json({
       mode,
