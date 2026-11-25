@@ -1,0 +1,95 @@
+{
+  "trip": {
+    "id": "demo_gate",
+    "name": "Judge Gate Test Trip",
+    "destination": "Demo",
+    "currency": "INR",
+    "members": [
+      {
+        "id": "g_m1",
+        "name": "Asha"
+      },
+      {
+        "id": "g_m2",
+        "name": "Bilal"
+      },
+      {
+        "id": "g_m3",
+        "name": "Chitra"
+      },
+      {
+        "id": "g_m4",
+        "name": "Dhruv"
+      }
+    ],
+    "expenses": [
+      {
+        "id": "g_e1",
+        "description": "Hotel",
+        "amount": 8000,
+        "category": "Stay",
+        "paid_by": "g_m1",
+        "split_type": "equal",
+        "split_among": [
+          "g_m1",
+          "g_m2",
+          "g_m3",
+          "g_m4"
+        ],
+        "date": "2026-03-01"
+      },
+      {
+        "id": "g_e2",
+        "description": "Fuel",
+        "amount": 2000,
+        "category": "Fuel",
+        "paid_by": "g_m2",
+        "split_type": "equal",
+        "split_among": [
+          "g_m1",
+          "g_m2",
+          "g_m3",
+          "g_m4"
+        ],
+        "date": "2026-03-01"
+      },
+      {
+        "id": "g_e3",
+        "description": "Dinner",
+        "amount": 1500,
+        "category": "Food",
+        "paid_by": "g_m3",
+        "split_type": "equal",
+        "split_among": [
+          "g_m3",
+          "g_m4",
+          "g_m2"
+        ],
+        "date": "2026-03-01"
+      }
+    ]
+  },
+  "expected_balances": {
+    "Asha": 5500,
+    "Bilal": -1000,
+    "Chitra": -1500,
+    "Dhruv": -3000
+  },
+  "expected_payments": [
+    {
+      "frm": "Dhruv",
+      "to": "Asha",
+      "amount": 3000
+    },
+    {
+      "frm": "Chitra",
+      "to": "Asha",
+      "amount": 1500
+    },
+    {
+      "frm": "Bilal",
+      "to": "Asha",
+      "amount": 1000
+    }
+  ]
+}

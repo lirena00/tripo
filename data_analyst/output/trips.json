@@ -1,0 +1,2652 @@
+{
+  "trips": [
+    {
+      "id": "trip1",
+      "name": "Goa Beach Week",
+      "destination": "Goa",
+      "currency": "INR",
+      "members": [
+        {
+          "id": "t1_m1",
+          "name": "Aarav"
+        },
+        {
+          "id": "t1_m2",
+          "name": "Meera"
+        },
+        {
+          "id": "t1_m3",
+          "name": "Kabir"
+        },
+        {
+          "id": "t1_m4",
+          "name": "Isha"
+        },
+        {
+          "id": "t1_m5",
+          "name": "Rohan"
+        },
+        {
+          "id": "t1_m6",
+          "name": "Tara"
+        }
+      ],
+      "expenses": [
+        {
+          "id": "t1_e1",
+          "description": "Beachfront villa advance",
+          "amount": 33000,
+          "category": "Stay",
+          "paid_by": "t1_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m1",
+            "t1_m2",
+            "t1_m3",
+            "t1_m4",
+            "t1_m5",
+            "t1_m6"
+          ],
+          "date": "2026-01-10"
+        },
+        {
+          "id": "t1_e2",
+          "description": "Scuba intro dive",
+          "amount": 7200,
+          "category": "Activities",
+          "paid_by": "t1_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m1",
+            "t1_m2",
+            "t1_m3",
+            "t1_m4",
+            "t1_m5",
+            "t1_m6"
+          ],
+          "date": "2026-01-10"
+        },
+        {
+          "id": "t1_e3",
+          "description": "Sunset mocktails & beers",
+          "amount": 740,
+          "category": "Drinks",
+          "paid_by": "t1_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m2",
+            "t1_m3",
+            "t1_m4",
+            "t1_m5",
+            "t1_m6"
+          ],
+          "date": "2026-01-10"
+        },
+        {
+          "id": "t1_e4",
+          "description": "Seafood dinner at Baga",
+          "amount": 1770,
+          "category": "Food",
+          "paid_by": "t1_m5",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m1",
+            "t1_m2",
+            "t1_m3",
+            "t1_m4",
+            "t1_m5",
+            "t1_m6"
+          ],
+          "date": "2026-01-10"
+        },
+        {
+          "id": "t1_e5",
+          "description": "Goan curry & rice",
+          "amount": 1290,
+          "category": "Food",
+          "paid_by": "t1_m3",
+          "split_type": "exact",
+          "split_among": [
+            "t1_m2",
+            "t1_m4",
+            "t1_m5"
+          ],
+          "date": "2026-01-10",
+          "shares": {
+            "t1_m2": 560,
+            "t1_m4": 460,
+            "t1_m5": 270
+          }
+        },
+        {
+          "id": "t1_e6",
+          "description": "Seafood dinner at Baga",
+          "amount": 2670,
+          "category": "Food",
+          "paid_by": "t1_m5",
+          "split_type": "exact",
+          "split_among": [
+            "t1_m2",
+            "t1_m3",
+            "t1_m6"
+          ],
+          "date": "2026-01-10",
+          "shares": {
+            "t1_m2": 1210,
+            "t1_m3": 990,
+            "t1_m6": 470
+          }
+        },
+        {
+          "id": "t1_e7",
+          "description": "Fish thali lunch",
+          "amount": 860,
+          "category": "Food",
+          "paid_by": "t1_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m2",
+            "t1_m5"
+          ],
+          "date": "2026-01-10"
+        },
+        {
+          "id": "t1_e8",
+          "description": "Cashews & local spices",
+          "amount": 1030,
+          "category": "Shopping",
+          "paid_by": "t1_m5",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m2",
+            "t1_m6"
+          ],
+          "date": "2026-01-10"
+        },
+        {
+          "id": "t1_e9",
+          "description": "Airport cab transfer",
+          "amount": 3630,
+          "category": "Transport",
+          "paid_by": "t1_m1",
+          "split_type": "exact",
+          "split_among": [
+            "t1_m1",
+            "t1_m2",
+            "t1_m3",
+            "t1_m4",
+            "t1_m5",
+            "t1_m6"
+          ],
+          "date": "2026-01-10",
+          "shares": {
+            "t1_m1": 490,
+            "t1_m2": 700,
+            "t1_m3": 540,
+            "t1_m4": 850,
+            "t1_m5": 580,
+            "t1_m6": 470
+          }
+        },
+        {
+          "id": "t1_e10",
+          "description": "Scooter rentals (3 days)",
+          "amount": 4380,
+          "category": "Transport",
+          "paid_by": "t1_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m1",
+            "t1_m2",
+            "t1_m3",
+            "t1_m4",
+            "t1_m5",
+            "t1_m6"
+          ],
+          "date": "2026-01-10"
+        },
+        {
+          "id": "t1_e11",
+          "description": "Parasailing session",
+          "amount": 2850,
+          "category": "Activities",
+          "paid_by": "t1_m5",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m1",
+            "t1_m2",
+            "t1_m3",
+            "t1_m4",
+            "t1_m5",
+            "t1_m6"
+          ],
+          "date": "2026-01-11"
+        },
+        {
+          "id": "t1_e12",
+          "description": "Dolphin boat tour",
+          "amount": 1350,
+          "category": "Activities",
+          "paid_by": "t1_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m1",
+            "t1_m2",
+            "t1_m5"
+          ],
+          "date": "2026-01-11"
+        },
+        {
+          "id": "t1_e13",
+          "description": "Tandoori grill platter",
+          "amount": 1770,
+          "category": "Food",
+          "paid_by": "t1_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m1",
+            "t1_m2",
+            "t1_m4"
+          ],
+          "date": "2026-01-11"
+        },
+        {
+          "id": "t1_e14",
+          "description": "Jet ski & banana boat",
+          "amount": 3600,
+          "category": "Activities",
+          "paid_by": "t1_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m1",
+            "t1_m2",
+            "t1_m3",
+            "t1_m4",
+            "t1_m5",
+            "t1_m6"
+          ],
+          "date": "2026-01-12"
+        },
+        {
+          "id": "t1_e15",
+          "description": "Late-night burger run",
+          "amount": 2460,
+          "category": "Food",
+          "paid_by": "t1_m5",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m1",
+            "t1_m2",
+            "t1_m3",
+            "t1_m4",
+            "t1_m5",
+            "t1_m6"
+          ],
+          "date": "2026-01-12"
+        },
+        {
+          "id": "t1_e16",
+          "description": "Goan curry & rice",
+          "amount": 840,
+          "category": "Food",
+          "paid_by": "t1_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m1",
+            "t1_m2",
+            "t1_m3",
+            "t1_m4",
+            "t1_m5",
+            "t1_m6"
+          ],
+          "date": "2026-01-12"
+        },
+        {
+          "id": "t1_e17",
+          "description": "Petrol fill-up for scooters",
+          "amount": 1470,
+          "category": "Fuel",
+          "paid_by": "t1_m5",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m1",
+            "t1_m2",
+            "t1_m3",
+            "t1_m4",
+            "t1_m5",
+            "t1_m6"
+          ],
+          "date": "2026-01-12"
+        },
+        {
+          "id": "t1_e18",
+          "description": "Return cab to station",
+          "amount": 1860,
+          "category": "Transport",
+          "paid_by": "t1_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m1",
+            "t1_m2",
+            "t1_m3",
+            "t1_m4",
+            "t1_m5",
+            "t1_m6"
+          ],
+          "date": "2026-01-12"
+        },
+        {
+          "id": "t1_e19",
+          "description": "Parasailing session",
+          "amount": 1250,
+          "category": "Activities",
+          "paid_by": "t1_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m5",
+            "t1_m6"
+          ],
+          "date": "2026-01-13"
+        },
+        {
+          "id": "t1_e20",
+          "description": "Beach shack cocktails",
+          "amount": 3130,
+          "category": "Drinks",
+          "paid_by": "t1_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m2",
+            "t1_m6"
+          ],
+          "date": "2026-01-13"
+        },
+        {
+          "id": "t1_e21",
+          "description": "Fresh coconut water round",
+          "amount": 470,
+          "category": "Drinks",
+          "paid_by": "t1_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m4",
+            "t1_m5"
+          ],
+          "date": "2026-01-13"
+        },
+        {
+          "id": "t1_e22",
+          "description": "Fish thali lunch",
+          "amount": 5880,
+          "category": "Food",
+          "paid_by": "t1_m4",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m2",
+            "t1_m3",
+            "t1_m4",
+            "t1_m6"
+          ],
+          "date": "2026-01-13"
+        },
+        {
+          "id": "t1_e23",
+          "description": "Beach shack breakfast",
+          "amount": 870,
+          "category": "Food",
+          "paid_by": "t1_m2",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m1",
+            "t1_m2",
+            "t1_m3",
+            "t1_m4",
+            "t1_m5",
+            "t1_m6"
+          ],
+          "date": "2026-01-13"
+        },
+        {
+          "id": "t1_e24",
+          "description": "Portuguese cafe brunch",
+          "amount": 3670,
+          "category": "Food",
+          "paid_by": "t1_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m1",
+            "t1_m3",
+            "t1_m4",
+            "t1_m5",
+            "t1_m6"
+          ],
+          "date": "2026-01-13"
+        },
+        {
+          "id": "t1_e25",
+          "description": "Beach shack breakfast",
+          "amount": 1640,
+          "category": "Food",
+          "paid_by": "t1_m5",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m4",
+            "t1_m6"
+          ],
+          "date": "2026-01-13"
+        },
+        {
+          "id": "t1_e26",
+          "description": "Breakfast bread & eggs",
+          "amount": 630,
+          "category": "Groceries",
+          "paid_by": "t1_m2",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m1",
+            "t1_m2",
+            "t1_m3",
+            "t1_m4",
+            "t1_m5",
+            "t1_m6"
+          ],
+          "date": "2026-01-13"
+        },
+        {
+          "id": "t1_e27",
+          "description": "Anjuna flea market tees",
+          "amount": 1950,
+          "category": "Shopping",
+          "paid_by": "t1_m3",
+          "split_type": "exact",
+          "split_among": [
+            "t1_m1",
+            "t1_m2",
+            "t1_m3",
+            "t1_m4",
+            "t1_m5",
+            "t1_m6"
+          ],
+          "date": "2026-01-13",
+          "shares": {
+            "t1_m1": 480,
+            "t1_m2": 210,
+            "t1_m3": 290,
+            "t1_m4": 280,
+            "t1_m5": 450,
+            "t1_m6": 240
+          }
+        },
+        {
+          "id": "t1_e28",
+          "description": "Chapora local taxi",
+          "amount": 1680,
+          "category": "Transport",
+          "paid_by": "t1_m5",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m1",
+            "t1_m2",
+            "t1_m3",
+            "t1_m4",
+            "t1_m5",
+            "t1_m6"
+          ],
+          "date": "2026-01-13"
+        },
+        {
+          "id": "t1_e29",
+          "description": "Airport cab transfer",
+          "amount": 3030,
+          "category": "Transport",
+          "paid_by": "t1_m4",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m1",
+            "t1_m2",
+            "t1_m3",
+            "t1_m4",
+            "t1_m5",
+            "t1_m6"
+          ],
+          "date": "2026-01-13"
+        },
+        {
+          "id": "t1_e30",
+          "description": "Scooter rentals (3 days)",
+          "amount": 870,
+          "category": "Transport",
+          "paid_by": "t1_m4",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m1",
+            "t1_m2",
+            "t1_m3",
+            "t1_m4",
+            "t1_m5",
+            "t1_m6"
+          ],
+          "date": "2026-01-13"
+        },
+        {
+          "id": "t1_e31",
+          "description": "Jet ski & banana boat",
+          "amount": 9000,
+          "category": "Activities",
+          "paid_by": "t1_m2",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m3",
+            "t1_m4",
+            "t1_m6"
+          ],
+          "date": "2026-01-14"
+        },
+        {
+          "id": "t1_e32",
+          "description": "Evening craft beer pitcher",
+          "amount": 2160,
+          "category": "Drinks",
+          "paid_by": "t1_m2",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m1",
+            "t1_m2",
+            "t1_m3",
+            "t1_m4",
+            "t1_m5",
+            "t1_m6"
+          ],
+          "date": "2026-01-14"
+        },
+        {
+          "id": "t1_e33",
+          "description": "Tandoori grill platter",
+          "amount": 1590,
+          "category": "Food",
+          "paid_by": "t1_m4",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m1",
+            "t1_m2",
+            "t1_m3",
+            "t1_m4",
+            "t1_m5",
+            "t1_m6"
+          ],
+          "date": "2026-01-14"
+        },
+        {
+          "id": "t1_e34",
+          "description": "Portuguese cafe brunch",
+          "amount": 5760,
+          "category": "Food",
+          "paid_by": "t1_m5",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m1",
+            "t1_m2",
+            "t1_m3",
+            "t1_m4",
+            "t1_m5",
+            "t1_m6"
+          ],
+          "date": "2026-01-14"
+        },
+        {
+          "id": "t1_e35",
+          "description": "Highway fuel top-up",
+          "amount": 3030,
+          "category": "Fuel",
+          "paid_by": "t1_m5",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m1",
+            "t1_m2",
+            "t1_m3",
+            "t1_m4",
+            "t1_m5",
+            "t1_m6"
+          ],
+          "date": "2026-01-14"
+        },
+        {
+          "id": "t1_e36",
+          "description": "Water bottles & ice box",
+          "amount": 1530,
+          "category": "Groceries",
+          "paid_by": "t1_m2",
+          "split_type": "equal",
+          "split_among": [
+            "t1_m1",
+            "t1_m2",
+            "t1_m3",
+            "t1_m4",
+            "t1_m5",
+            "t1_m6"
+          ],
+          "date": "2026-01-14"
+        }
+      ]
+    },
+    {
+      "id": "trip2",
+      "name": "Manali Snow Escape",
+      "destination": "Manali",
+      "currency": "INR",
+      "members": [
+        {
+          "id": "t2_m1",
+          "name": "Vikram"
+        },
+        {
+          "id": "t2_m2",
+          "name": "Anaya"
+        },
+        {
+          "id": "t2_m3",
+          "name": "Dev"
+        },
+        {
+          "id": "t2_m4",
+          "name": "Sana"
+        },
+        {
+          "id": "t2_m5",
+          "name": "Neel"
+        }
+      ],
+      "expenses": [
+        {
+          "id": "t2_e1",
+          "description": "Snow-view wooden cabin",
+          "amount": 26000,
+          "category": "Stay",
+          "paid_by": "t2_m2",
+          "split_type": "equal",
+          "split_among": [
+            "t2_m1",
+            "t2_m2",
+            "t2_m3",
+            "t2_m4",
+            "t2_m5"
+          ],
+          "date": "2026-02-05"
+        },
+        {
+          "id": "t2_e2",
+          "description": "Ginger honey lemon tea",
+          "amount": 1040,
+          "category": "Drinks",
+          "paid_by": "t2_m4",
+          "split_type": "equal",
+          "split_among": [
+            "t2_m1",
+            "t2_m2",
+            "t2_m3",
+            "t2_m4"
+          ],
+          "date": "2026-02-05"
+        },
+        {
+          "id": "t2_e3",
+          "description": "Woodfired pizza night",
+          "amount": 5900,
+          "category": "Food",
+          "paid_by": "t2_m4",
+          "split_type": "equal",
+          "split_among": [
+            "t2_m2",
+            "t2_m3",
+            "t2_m4",
+            "t2_m5"
+          ],
+          "date": "2026-02-05"
+        },
+        {
+          "id": "t2_e4",
+          "description": "Hot momos & thukpa",
+          "amount": 3780,
+          "category": "Food",
+          "paid_by": "t2_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t2_m2",
+            "t2_m3",
+            "t2_m4"
+          ],
+          "date": "2026-02-05"
+        },
+        {
+          "id": "t2_e5",
+          "description": "Diesel tank full before Rohtang",
+          "amount": 2760,
+          "category": "Fuel",
+          "paid_by": "t2_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t2_m1",
+            "t2_m2",
+            "t2_m3",
+            "t2_m4",
+            "t2_m5"
+          ],
+          "date": "2026-02-05"
+        },
+        {
+          "id": "t2_e6",
+          "description": "Kullu shawl souvenirs",
+          "amount": 2410,
+          "category": "Shopping",
+          "paid_by": "t2_m4",
+          "split_type": "equal",
+          "split_among": [
+            "t2_m1",
+            "t2_m3"
+          ],
+          "date": "2026-02-05"
+        },
+        {
+          "id": "t2_e7",
+          "description": "Thermal socks & mufflers",
+          "amount": 1950,
+          "category": "Shopping",
+          "paid_by": "t2_m4",
+          "split_type": "equal",
+          "split_among": [
+            "t2_m1",
+            "t2_m2",
+            "t2_m3",
+            "t2_m4",
+            "t2_m5"
+          ],
+          "date": "2026-02-05"
+        },
+        {
+          "id": "t2_e8",
+          "description": "Overnight Volvo luggage drop",
+          "amount": 3050,
+          "category": "Transport",
+          "paid_by": "t2_m2",
+          "split_type": "equal",
+          "split_among": [
+            "t2_m1",
+            "t2_m2",
+            "t2_m3",
+            "t2_m4",
+            "t2_m5"
+          ],
+          "date": "2026-02-05"
+        },
+        {
+          "id": "t2_e9",
+          "description": "Paragliding in Solang",
+          "amount": 4500,
+          "category": "Activities",
+          "paid_by": "t2_m4",
+          "split_type": "equal",
+          "split_among": [
+            "t2_m2",
+            "t2_m4"
+          ],
+          "date": "2026-02-06"
+        },
+        {
+          "id": "t2_e10",
+          "description": "Diesel tank full before Rohtang",
+          "amount": 2580,
+          "category": "Fuel",
+          "paid_by": "t2_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t2_m1",
+            "t2_m2",
+            "t2_m3",
+            "t2_m4",
+            "t2_m5"
+          ],
+          "date": "2026-02-06"
+        },
+        {
+          "id": "t2_e11",
+          "description": "Highway fuel stop",
+          "amount": 1150,
+          "category": "Fuel",
+          "paid_by": "t2_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t2_m1",
+            "t2_m2",
+            "t2_m3",
+            "t2_m4",
+            "t2_m5"
+          ],
+          "date": "2026-02-06"
+        },
+        {
+          "id": "t2_e12",
+          "description": "Atal Tunnel permit & taxi",
+          "amount": 3210,
+          "category": "Transport",
+          "paid_by": "t2_m4",
+          "split_type": "exact",
+          "split_among": [
+            "t2_m1",
+            "t2_m2",
+            "t2_m3",
+            "t2_m4",
+            "t2_m5"
+          ],
+          "date": "2026-02-06",
+          "shares": {
+            "t2_m1": 820,
+            "t2_m2": 320,
+            "t2_m3": 740,
+            "t2_m4": 490,
+            "t2_m5": 840
+          }
+        },
+        {
+          "id": "t2_e13",
+          "description": "Auto back from Mall Road",
+          "amount": 3610,
+          "category": "Transport",
+          "paid_by": "t2_m4",
+          "split_type": "equal",
+          "split_among": [
+            "t2_m1",
+            "t2_m2",
+            "t2_m3",
+            "t2_m4",
+            "t2_m5"
+          ],
+          "date": "2026-02-06"
+        },
+        {
+          "id": "t2_e14",
+          "description": "Bonfire hot chocolate",
+          "amount": 800,
+          "category": "Drinks",
+          "paid_by": "t2_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t2_m1",
+            "t2_m2",
+            "t2_m3",
+            "t2_m4",
+            "t2_m5"
+          ],
+          "date": "2026-02-07"
+        },
+        {
+          "id": "t2_e15",
+          "description": "Riverside Maggi & chai",
+          "amount": 830,
+          "category": "Food",
+          "paid_by": "t2_m2",
+          "split_type": "equal",
+          "split_among": [
+            "t2_m1",
+            "t2_m2",
+            "t2_m3",
+            "t2_m4",
+            "t2_m5"
+          ],
+          "date": "2026-02-07"
+        },
+        {
+          "id": "t2_e16",
+          "description": "Mountain petrol refill",
+          "amount": 1070,
+          "category": "Fuel",
+          "paid_by": "t2_m4",
+          "split_type": "equal",
+          "split_among": [
+            "t2_m1",
+            "t2_m2",
+            "t2_m3",
+            "t2_m4",
+            "t2_m5"
+          ],
+          "date": "2026-02-07"
+        },
+        {
+          "id": "t2_e17",
+          "description": "Himachali trout dinner",
+          "amount": 730,
+          "category": "Food",
+          "paid_by": "t2_m2",
+          "split_type": "equal",
+          "split_among": [
+            "t2_m1",
+            "t2_m2",
+            "t2_m3",
+            "t2_m4",
+            "t2_m5"
+          ],
+          "date": "2026-02-08"
+        },
+        {
+          "id": "t2_e18",
+          "description": "Hot momos & thukpa",
+          "amount": 4140,
+          "category": "Food",
+          "paid_by": "t2_m4",
+          "split_type": "equal",
+          "split_among": [
+            "t2_m1",
+            "t2_m2",
+            "t2_m3"
+          ],
+          "date": "2026-02-08"
+        },
+        {
+          "id": "t2_e19",
+          "description": "Old Manali cafe brunch",
+          "amount": 5770,
+          "category": "Food",
+          "paid_by": "t2_m4",
+          "split_type": "equal",
+          "split_among": [
+            "t2_m1",
+            "t2_m2",
+            "t2_m3",
+            "t2_m4",
+            "t2_m5"
+          ],
+          "date": "2026-02-08"
+        },
+        {
+          "id": "t2_e20",
+          "description": "Highway dhaba lunch",
+          "amount": 2190,
+          "category": "Food",
+          "paid_by": "t2_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t2_m1",
+            "t2_m2",
+            "t2_m3",
+            "t2_m4",
+            "t2_m5"
+          ],
+          "date": "2026-02-08"
+        },
+        {
+          "id": "t2_e21",
+          "description": "Cabin balance settlement",
+          "amount": 14000,
+          "category": "Stay",
+          "paid_by": "t2_m2",
+          "split_type": "equal",
+          "split_among": [
+            "t2_m1",
+            "t2_m2",
+            "t2_m3",
+            "t2_m4",
+            "t2_m5"
+          ],
+          "date": "2026-02-09"
+        },
+        {
+          "id": "t2_e22",
+          "description": "Craft cider & beers",
+          "amount": 1830,
+          "category": "Drinks",
+          "paid_by": "t2_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t2_m2",
+            "t2_m3",
+            "t2_m5"
+          ],
+          "date": "2026-02-09"
+        },
+        {
+          "id": "t2_e23",
+          "description": "Spiced apple juice round",
+          "amount": 580,
+          "category": "Drinks",
+          "paid_by": "t2_m3",
+          "split_type": "exact",
+          "split_among": [
+            "t2_m2",
+            "t2_m3",
+            "t2_m4"
+          ],
+          "date": "2026-02-09",
+          "shares": {
+            "t2_m2": 120,
+            "t2_m3": 220,
+            "t2_m4": 240
+          }
+        },
+        {
+          "id": "t2_e24",
+          "description": "Himachali trout dinner",
+          "amount": 2030,
+          "category": "Food",
+          "paid_by": "t2_m1",
+          "split_type": "exact",
+          "split_among": [
+            "t2_m1",
+            "t2_m2",
+            "t2_m4"
+          ],
+          "date": "2026-02-09",
+          "shares": {
+            "t2_m1": 730,
+            "t2_m2": 720,
+            "t2_m4": 580
+          }
+        },
+        {
+          "id": "t2_e25",
+          "description": "Woollen caps & gloves",
+          "amount": 2970,
+          "category": "Shopping",
+          "paid_by": "t2_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t2_m3",
+            "t2_m5"
+          ],
+          "date": "2026-02-09"
+        },
+        {
+          "id": "t2_e26",
+          "description": "Overnight Volvo luggage drop",
+          "amount": 580,
+          "category": "Transport",
+          "paid_by": "t2_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t2_m1",
+            "t2_m2",
+            "t2_m3",
+            "t2_m4",
+            "t2_m5"
+          ],
+          "date": "2026-02-09"
+        },
+        {
+          "id": "t2_e27",
+          "description": "Local cab to Solang",
+          "amount": 390,
+          "category": "Transport",
+          "paid_by": "t2_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t2_m1",
+            "t2_m2",
+            "t2_m3",
+            "t2_m4",
+            "t2_m5"
+          ],
+          "date": "2026-02-09"
+        },
+        {
+          "id": "t2_e28",
+          "description": "Local cab to Solang",
+          "amount": 1520,
+          "category": "Transport",
+          "paid_by": "t2_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t2_m1",
+            "t2_m2",
+            "t2_m3",
+            "t2_m4",
+            "t2_m5"
+          ],
+          "date": "2026-02-09"
+        }
+      ]
+    },
+    {
+      "id": "trip3",
+      "name": "Jaipur Heritage Weekend",
+      "destination": "Jaipur",
+      "currency": "INR",
+      "members": [
+        {
+          "id": "t3_m1",
+          "name": "Zoya"
+        },
+        {
+          "id": "t3_m2",
+          "name": "Arjun"
+        },
+        {
+          "id": "t3_m3",
+          "name": "Pia"
+        },
+        {
+          "id": "t3_m4",
+          "name": "Yash"
+        }
+      ],
+      "expenses": [
+        {
+          "id": "t3_e1",
+          "description": "Heritage haveli booking",
+          "amount": 21000,
+          "category": "Stay",
+          "paid_by": "t3_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t3_m1",
+            "t3_m2",
+            "t3_m3",
+            "t3_m4"
+          ],
+          "date": "2026-02-20"
+        },
+        {
+          "id": "t3_e2",
+          "description": "Rajasthani dal baati dinner",
+          "amount": 1500,
+          "category": "Food",
+          "paid_by": "t3_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t3_m2",
+            "t3_m3",
+            "t3_m4"
+          ],
+          "date": "2026-02-20"
+        },
+        {
+          "id": "t3_e3",
+          "description": "Jaipur thali lunch",
+          "amount": 5580,
+          "category": "Food",
+          "paid_by": "t3_m4",
+          "split_type": "equal",
+          "split_among": [
+            "t3_m1",
+            "t3_m2",
+            "t3_m3",
+            "t3_m4"
+          ],
+          "date": "2026-02-20"
+        },
+        {
+          "id": "t3_e4",
+          "description": "Lac bangles & mojris",
+          "amount": 2060,
+          "category": "Shopping",
+          "paid_by": "t3_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t3_m2",
+            "t3_m4"
+          ],
+          "date": "2026-02-20"
+        },
+        {
+          "id": "t3_e5",
+          "description": "Old City e-rickshaws",
+          "amount": 300,
+          "category": "Transport",
+          "paid_by": "t3_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t3_m1",
+            "t3_m2",
+            "t3_m3",
+            "t3_m4"
+          ],
+          "date": "2026-02-20"
+        },
+        {
+          "id": "t3_e6",
+          "description": "Cab to Amer Fort",
+          "amount": 1040,
+          "category": "Transport",
+          "paid_by": "t3_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t3_m1",
+            "t3_m2",
+            "t3_m3",
+            "t3_m4"
+          ],
+          "date": "2026-02-20"
+        },
+        {
+          "id": "t3_e7",
+          "description": "Chokhi Dhani folk evening",
+          "amount": 2700,
+          "category": "Activities",
+          "paid_by": "t3_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t3_m2",
+            "t3_m4"
+          ],
+          "date": "2026-02-21"
+        },
+        {
+          "id": "t3_e8",
+          "description": "Nahargarh sunset pass",
+          "amount": 1750,
+          "category": "Activities",
+          "paid_by": "t3_m1",
+          "split_type": "exact",
+          "split_among": [
+            "t3_m1",
+            "t3_m2"
+          ],
+          "date": "2026-02-21",
+          "shares": {
+            "t3_m1": 500,
+            "t3_m2": 1250
+          }
+        },
+        {
+          "id": "t3_e9",
+          "description": "Kesar pista lassi round",
+          "amount": 1300,
+          "category": "Drinks",
+          "paid_by": "t3_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t3_m1",
+            "t3_m2",
+            "t3_m3",
+            "t3_m4"
+          ],
+          "date": "2026-02-21"
+        },
+        {
+          "id": "t3_e10",
+          "description": "Highway petrol fill-up",
+          "amount": 2600,
+          "category": "Fuel",
+          "paid_by": "t3_m2",
+          "split_type": "equal",
+          "split_among": [
+            "t3_m1",
+            "t3_m2",
+            "t3_m3",
+            "t3_m4"
+          ],
+          "date": "2026-02-21"
+        },
+        {
+          "id": "t3_e11",
+          "description": "City fuel top-up",
+          "amount": 3000,
+          "category": "Fuel",
+          "paid_by": "t3_m2",
+          "split_type": "equal",
+          "split_among": [
+            "t3_m1",
+            "t3_m2",
+            "t3_m3",
+            "t3_m4"
+          ],
+          "date": "2026-02-21"
+        },
+        {
+          "id": "t3_e12",
+          "description": "Water bottles & ORS",
+          "amount": 480,
+          "category": "Groceries",
+          "paid_by": "t3_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t3_m1",
+            "t3_m2",
+            "t3_m3",
+            "t3_m4"
+          ],
+          "date": "2026-02-21"
+        },
+        {
+          "id": "t3_e13",
+          "description": "Block-print cotton kurtas",
+          "amount": 1930,
+          "category": "Shopping",
+          "paid_by": "t3_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t3_m2",
+            "t3_m4"
+          ],
+          "date": "2026-02-21"
+        },
+        {
+          "id": "t3_e14",
+          "description": "Station pickup cab",
+          "amount": 2830,
+          "category": "Transport",
+          "paid_by": "t3_m1",
+          "split_type": "exact",
+          "split_among": [
+            "t3_m1",
+            "t3_m2",
+            "t3_m3",
+            "t3_m4"
+          ],
+          "date": "2026-02-21",
+          "shares": {
+            "t3_m1": 440,
+            "t3_m2": 930,
+            "t3_m3": 1040,
+            "t3_m4": 420
+          }
+        },
+        {
+          "id": "t3_e15",
+          "description": "Haveli final balance",
+          "amount": 13500,
+          "category": "Stay",
+          "paid_by": "t3_m2",
+          "split_type": "equal",
+          "split_among": [
+            "t3_m1",
+            "t3_m2",
+            "t3_m3",
+            "t3_m4"
+          ],
+          "date": "2026-02-22"
+        },
+        {
+          "id": "t3_e16",
+          "description": "Amer Fort entry & guide",
+          "amount": 1200,
+          "category": "Activities",
+          "paid_by": "t3_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t3_m1",
+            "t3_m2",
+            "t3_m3"
+          ],
+          "date": "2026-02-22"
+        },
+        {
+          "id": "t3_e17",
+          "description": "Lassi & kachori breakfast",
+          "amount": 1410,
+          "category": "Food",
+          "paid_by": "t3_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t3_m1",
+            "t3_m2",
+            "t3_m4"
+          ],
+          "date": "2026-02-22"
+        },
+        {
+          "id": "t3_e18",
+          "description": "Rooftop fort-view dinner",
+          "amount": 5500,
+          "category": "Food",
+          "paid_by": "t3_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t3_m1",
+            "t3_m2",
+            "t3_m3",
+            "t3_m4"
+          ],
+          "date": "2026-02-22"
+        },
+        {
+          "id": "t3_e19",
+          "description": "Chai & samosa pitstop",
+          "amount": 720,
+          "category": "Food",
+          "paid_by": "t3_m2",
+          "split_type": "equal",
+          "split_among": [
+            "t3_m1",
+            "t3_m2",
+            "t3_m4"
+          ],
+          "date": "2026-02-22"
+        },
+        {
+          "id": "t3_e20",
+          "description": "Road-trip snacks",
+          "amount": 1760,
+          "category": "Groceries",
+          "paid_by": "t3_m2",
+          "split_type": "equal",
+          "split_among": [
+            "t3_m1",
+            "t3_m2",
+            "t3_m3",
+            "t3_m4"
+          ],
+          "date": "2026-02-22"
+        },
+        {
+          "id": "t3_e21",
+          "description": "Blue pottery coasters",
+          "amount": 1010,
+          "category": "Shopping",
+          "paid_by": "t3_m2",
+          "split_type": "exact",
+          "split_among": [
+            "t3_m1",
+            "t3_m2",
+            "t3_m3",
+            "t3_m4"
+          ],
+          "date": "2026-02-22",
+          "shares": {
+            "t3_m1": 300,
+            "t3_m2": 140,
+            "t3_m3": 300,
+            "t3_m4": 270
+          }
+        },
+        {
+          "id": "t3_e22",
+          "description": "Cab to Amer Fort",
+          "amount": 1480,
+          "category": "Transport",
+          "paid_by": "t3_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t3_m1",
+            "t3_m2",
+            "t3_m3",
+            "t3_m4"
+          ],
+          "date": "2026-02-22"
+        }
+      ]
+    },
+    {
+      "id": "trip4",
+      "name": "Kerala Backwaters",
+      "destination": "Kerala",
+      "currency": "INR",
+      "members": [
+        {
+          "id": "t4_m1",
+          "name": "Nikhil"
+        },
+        {
+          "id": "t4_m2",
+          "name": "Riya"
+        },
+        {
+          "id": "t4_m3",
+          "name": "Samar"
+        },
+        {
+          "id": "t4_m4",
+          "name": "Diya"
+        },
+        {
+          "id": "t4_m5",
+          "name": "Kunal"
+        },
+        {
+          "id": "t4_m6",
+          "name": "Mira"
+        },
+        {
+          "id": "t4_m7",
+          "name": "Ishaan"
+        }
+      ],
+      "expenses": [
+        {
+          "id": "t4_e1",
+          "description": "Alleppey houseboat booking",
+          "amount": 24500,
+          "category": "Stay",
+          "paid_by": "t4_m2",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-04"
+        },
+        {
+          "id": "t4_e2",
+          "description": "Shikara canoe ride",
+          "amount": 1350,
+          "category": "Activities",
+          "paid_by": "t4_m4",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m2",
+            "t4_m3",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-04"
+        },
+        {
+          "id": "t4_e3",
+          "description": "Tea museum tour",
+          "amount": 4200,
+          "category": "Activities",
+          "paid_by": "t4_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-04"
+        },
+        {
+          "id": "t4_e4",
+          "description": "Filter coffee round",
+          "amount": 3240,
+          "category": "Drinks",
+          "paid_by": "t4_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m2",
+            "t4_m7"
+          ],
+          "date": "2026-03-04"
+        },
+        {
+          "id": "t4_e5",
+          "description": "Evening toddy shop drinks",
+          "amount": 2360,
+          "category": "Drinks",
+          "paid_by": "t4_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m4",
+            "t4_m5",
+            "t4_m7"
+          ],
+          "date": "2026-03-04"
+        },
+        {
+          "id": "t4_e6",
+          "description": "Bakery puffs & coffee",
+          "amount": 4620,
+          "category": "Food",
+          "paid_by": "t4_m1",
+          "split_type": "exact",
+          "split_among": [
+            "t4_m1",
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-04",
+          "shares": {
+            "t4_m1": 920,
+            "t4_m2": 610,
+            "t4_m3": 380,
+            "t4_m4": 680,
+            "t4_m5": 540,
+            "t4_m6": 1020,
+            "t4_m7": 470
+          }
+        },
+        {
+          "id": "t4_e7",
+          "description": "Highway diesel refill",
+          "amount": 1400,
+          "category": "Fuel",
+          "paid_by": "t4_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-04"
+        },
+        {
+          "id": "t4_e8",
+          "description": "Return fuel top-up",
+          "amount": 2100,
+          "category": "Fuel",
+          "paid_by": "t4_m2",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-04"
+        },
+        {
+          "id": "t4_e9",
+          "description": "Kochi airport Tempo Traveller",
+          "amount": 2520,
+          "category": "Transport",
+          "paid_by": "t4_m6",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-04"
+        },
+        {
+          "id": "t4_e10",
+          "description": "Periyar boat safari",
+          "amount": 1550,
+          "category": "Activities",
+          "paid_by": "t4_m4",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m2",
+            "t4_m7"
+          ],
+          "date": "2026-03-05"
+        },
+        {
+          "id": "t4_e11",
+          "description": "Shikara canoe ride",
+          "amount": 8850,
+          "category": "Activities",
+          "paid_by": "t4_m4",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5"
+          ],
+          "date": "2026-03-05"
+        },
+        {
+          "id": "t4_e12",
+          "description": "Tender coconut stop",
+          "amount": 1050,
+          "category": "Drinks",
+          "paid_by": "t4_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-05"
+        },
+        {
+          "id": "t4_e13",
+          "description": "Fresh lime soda & shakes",
+          "amount": 2030,
+          "category": "Drinks",
+          "paid_by": "t4_m2",
+          "split_type": "exact",
+          "split_among": [
+            "t4_m1",
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m6"
+          ],
+          "date": "2026-03-05",
+          "shares": {
+            "t4_m1": 660,
+            "t4_m2": 360,
+            "t4_m3": 320,
+            "t4_m4": 360,
+            "t4_m6": 330
+          }
+        },
+        {
+          "id": "t4_e14",
+          "description": "Tea garden cafe snacks",
+          "amount": 1490,
+          "category": "Food",
+          "paid_by": "t4_m7",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m6"
+          ],
+          "date": "2026-03-05"
+        },
+        {
+          "id": "t4_e15",
+          "description": "Sadya banana-leaf lunch",
+          "amount": 2450,
+          "category": "Food",
+          "paid_by": "t4_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-05"
+        },
+        {
+          "id": "t4_e16",
+          "description": "Mosquito repellent & snacks",
+          "amount": 1680,
+          "category": "Groceries",
+          "paid_by": "t4_m2",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-05"
+        },
+        {
+          "id": "t4_e17",
+          "description": "Morning fruit basket",
+          "amount": 280,
+          "category": "Groceries",
+          "paid_by": "t4_m4",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-05"
+        },
+        {
+          "id": "t4_e18",
+          "description": "Morning fruit basket",
+          "amount": 1610,
+          "category": "Groceries",
+          "paid_by": "t4_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-05"
+        },
+        {
+          "id": "t4_e19",
+          "description": "Water cans & banana chips",
+          "amount": 1050,
+          "category": "Groceries",
+          "paid_by": "t4_m6",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-05"
+        },
+        {
+          "id": "t4_e20",
+          "description": "Kathakali evening show",
+          "amount": 3150,
+          "category": "Activities",
+          "paid_by": "t4_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-06"
+        },
+        {
+          "id": "t4_e21",
+          "description": "Ayurvedic massage session",
+          "amount": 1650,
+          "category": "Activities",
+          "paid_by": "t4_m3",
+          "split_type": "exact",
+          "split_among": [
+            "t4_m2",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-06",
+          "shares": {
+            "t4_m2": 370,
+            "t4_m4": 420,
+            "t4_m5": 220,
+            "t4_m6": 200,
+            "t4_m7": 440
+          }
+        },
+        {
+          "id": "t4_e22",
+          "description": "Tender coconut stop",
+          "amount": 3580,
+          "category": "Drinks",
+          "paid_by": "t4_m5",
+          "split_type": "exact",
+          "split_among": [
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-06",
+          "shares": {
+            "t4_m4": 840,
+            "t4_m5": 870,
+            "t4_m6": 740,
+            "t4_m7": 1130
+          }
+        },
+        {
+          "id": "t4_e23",
+          "description": "Karimeen pollichathu dinner",
+          "amount": 2080,
+          "category": "Food",
+          "paid_by": "t4_m6",
+          "split_type": "exact",
+          "split_among": [
+            "t4_m1",
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-06",
+          "shares": {
+            "t4_m1": 300,
+            "t4_m2": 280,
+            "t4_m3": 380,
+            "t4_m4": 280,
+            "t4_m5": 350,
+            "t4_m6": 200,
+            "t4_m7": 290
+          }
+        },
+        {
+          "id": "t4_e24",
+          "description": "Cardamom & black pepper",
+          "amount": 480,
+          "category": "Shopping",
+          "paid_by": "t4_m2",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m5",
+            "t4_m6"
+          ],
+          "date": "2026-03-06"
+        },
+        {
+          "id": "t4_e25",
+          "description": "Public backwater ferry",
+          "amount": 2870,
+          "category": "Transport",
+          "paid_by": "t4_m4",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-06"
+        },
+        {
+          "id": "t4_e26",
+          "description": "Kathakali evening show",
+          "amount": 5250,
+          "category": "Activities",
+          "paid_by": "t4_m6",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-07"
+        },
+        {
+          "id": "t4_e27",
+          "description": "Water cans & banana chips",
+          "amount": 280,
+          "category": "Groceries",
+          "paid_by": "t4_m2",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-07"
+        },
+        {
+          "id": "t4_e28",
+          "description": "Water cans & banana chips",
+          "amount": 270,
+          "category": "Groceries",
+          "paid_by": "t4_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m3",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-07"
+        },
+        {
+          "id": "t4_e29",
+          "description": "Mosquito repellent & snacks",
+          "amount": 1750,
+          "category": "Groceries",
+          "paid_by": "t4_m6",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-07"
+        },
+        {
+          "id": "t4_e30",
+          "description": "Kasavu cotton mundu",
+          "amount": 1120,
+          "category": "Shopping",
+          "paid_by": "t4_m2",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-07"
+        },
+        {
+          "id": "t4_e31",
+          "description": "Appam & stew breakfast",
+          "amount": 4130,
+          "category": "Food",
+          "paid_by": "t4_m4",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-08"
+        },
+        {
+          "id": "t4_e32",
+          "description": "Karimeen pollichathu dinner",
+          "amount": 2670,
+          "category": "Food",
+          "paid_by": "t4_m6",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-08"
+        },
+        {
+          "id": "t4_e33",
+          "description": "Coastal seafood platter",
+          "amount": 1290,
+          "category": "Food",
+          "paid_by": "t4_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-08"
+        },
+        {
+          "id": "t4_e34",
+          "description": "Sadya banana-leaf lunch",
+          "amount": 4910,
+          "category": "Food",
+          "paid_by": "t4_m2",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m3",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-09"
+        },
+        {
+          "id": "t4_e35",
+          "description": "Malabar parotta & curry",
+          "amount": 4340,
+          "category": "Food",
+          "paid_by": "t4_m5",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-09"
+        },
+        {
+          "id": "t4_e36",
+          "description": "Appam & stew breakfast",
+          "amount": 6150,
+          "category": "Food",
+          "paid_by": "t4_m6",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m2",
+            "t4_m5"
+          ],
+          "date": "2026-03-09"
+        },
+        {
+          "id": "t4_e37",
+          "description": "Malabar parotta & curry",
+          "amount": 4200,
+          "category": "Food",
+          "paid_by": "t4_m6",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-09"
+        },
+        {
+          "id": "t4_e38",
+          "description": "Hill-climb petrol fill-up",
+          "amount": 1190,
+          "category": "Fuel",
+          "paid_by": "t4_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-09"
+        },
+        {
+          "id": "t4_e39",
+          "description": "Mosquito repellent & snacks",
+          "amount": 1680,
+          "category": "Groceries",
+          "paid_by": "t4_m6",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m2",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-09"
+        },
+        {
+          "id": "t4_e40",
+          "description": "Handmade coconut bowls",
+          "amount": 660,
+          "category": "Shopping",
+          "paid_by": "t4_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t4_m1",
+            "t4_m3",
+            "t4_m4",
+            "t4_m5",
+            "t4_m6",
+            "t4_m7"
+          ],
+          "date": "2026-03-09"
+        }
+      ]
+    },
+    {
+      "id": "trip5",
+      "name": "Rishikesh Rafting Trip",
+      "destination": "Rishikesh",
+      "currency": "INR",
+      "members": [
+        {
+          "id": "t5_m1",
+          "name": "Parth"
+        },
+        {
+          "id": "t5_m2",
+          "name": "Naina"
+        },
+        {
+          "id": "t5_m3",
+          "name": "Veer"
+        },
+        {
+          "id": "t5_m4",
+          "name": "Ria"
+        },
+        {
+          "id": "t5_m5",
+          "name": "Om"
+        }
+      ],
+      "expenses": [
+        {
+          "id": "t5_e1",
+          "description": "Riverside tent camp",
+          "amount": 23000,
+          "category": "Stay",
+          "paid_by": "t5_m2",
+          "split_type": "equal",
+          "split_among": [
+            "t5_m1",
+            "t5_m2",
+            "t5_m3",
+            "t5_m4",
+            "t5_m5"
+          ],
+          "date": "2026-03-20"
+        },
+        {
+          "id": "t5_e2",
+          "description": "Cliff jumping & body surfing",
+          "amount": 2150,
+          "category": "Activities",
+          "paid_by": "t5_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t5_m1",
+            "t5_m2",
+            "t5_m3",
+            "t5_m4",
+            "t5_m5"
+          ],
+          "date": "2026-03-20"
+        },
+        {
+          "id": "t5_e3",
+          "description": "Ginger lemon honey tea",
+          "amount": 2850,
+          "category": "Drinks",
+          "paid_by": "t5_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t5_m1",
+            "t5_m2",
+            "t5_m3",
+            "t5_m4",
+            "t5_m5"
+          ],
+          "date": "2026-03-20"
+        },
+        {
+          "id": "t5_e4",
+          "description": "Pahadi thali lunch",
+          "amount": 4910,
+          "category": "Food",
+          "paid_by": "t5_m4",
+          "split_type": "equal",
+          "split_among": [
+            "t5_m1",
+            "t5_m2",
+            "t5_m3",
+            "t5_m4",
+            "t5_m5"
+          ],
+          "date": "2026-03-20"
+        },
+        {
+          "id": "t5_e5",
+          "description": "Shared jeep to Shivpuri",
+          "amount": 2120,
+          "category": "Transport",
+          "paid_by": "t5_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t5_m1",
+            "t5_m2",
+            "t5_m3",
+            "t5_m4",
+            "t5_m5"
+          ],
+          "date": "2026-03-20"
+        },
+        {
+          "id": "t5_e6",
+          "description": "Fresh fruit juices",
+          "amount": 2310,
+          "category": "Drinks",
+          "paid_by": "t5_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t5_m1",
+            "t5_m2",
+            "t5_m3",
+            "t5_m4",
+            "t5_m5"
+          ],
+          "date": "2026-03-21"
+        },
+        {
+          "id": "t5_e7",
+          "description": "Haridwar highway petrol",
+          "amount": 2500,
+          "category": "Fuel",
+          "paid_by": "t5_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t5_m1",
+            "t5_m2",
+            "t5_m3",
+            "t5_m4",
+            "t5_m5"
+          ],
+          "date": "2026-03-21"
+        },
+        {
+          "id": "t5_e8",
+          "description": "Auto to Triveni Ghat",
+          "amount": 4140,
+          "category": "Transport",
+          "paid_by": "t5_m2",
+          "split_type": "equal",
+          "split_among": [
+            "t5_m1",
+            "t5_m2",
+            "t5_m3",
+            "t5_m4",
+            "t5_m5"
+          ],
+          "date": "2026-03-21"
+        },
+        {
+          "id": "t5_e9",
+          "description": "Cold coffee at Laxman Jhula",
+          "amount": 750,
+          "category": "Drinks",
+          "paid_by": "t5_m4",
+          "split_type": "equal",
+          "split_among": [
+            "t5_m2",
+            "t5_m3",
+            "t5_m5"
+          ],
+          "date": "2026-03-22"
+        },
+        {
+          "id": "t5_e10",
+          "description": "Cold coffee at Laxman Jhula",
+          "amount": 2330,
+          "category": "Drinks",
+          "paid_by": "t5_m4",
+          "split_type": "equal",
+          "split_among": [
+            "t5_m3",
+            "t5_m4"
+          ],
+          "date": "2026-03-22"
+        },
+        {
+          "id": "t5_e11",
+          "description": "Aloo paratha breakfast",
+          "amount": 1850,
+          "category": "Food",
+          "paid_by": "t5_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t5_m1",
+            "t5_m2",
+            "t5_m3",
+            "t5_m4",
+            "t5_m5"
+          ],
+          "date": "2026-03-22"
+        },
+        {
+          "id": "t5_e12",
+          "description": "Evening momos & soup",
+          "amount": 1530,
+          "category": "Food",
+          "paid_by": "t5_m4",
+          "split_type": "equal",
+          "split_among": [
+            "t5_m1",
+            "t5_m2",
+            "t5_m5"
+          ],
+          "date": "2026-03-22"
+        },
+        {
+          "id": "t5_e13",
+          "description": "Ganga-view cafe brunch",
+          "amount": 1710,
+          "category": "Food",
+          "paid_by": "t5_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t5_m1",
+            "t5_m2",
+            "t5_m5"
+          ],
+          "date": "2026-03-22"
+        },
+        {
+          "id": "t5_e14",
+          "description": "Camp buffet dinner",
+          "amount": 5910,
+          "category": "Food",
+          "paid_by": "t5_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t5_m1",
+            "t5_m2",
+            "t5_m3",
+            "t5_m4",
+            "t5_m5"
+          ],
+          "date": "2026-03-22"
+        },
+        {
+          "id": "t5_e15",
+          "description": "Hill fuel top-up",
+          "amount": 3110,
+          "category": "Fuel",
+          "paid_by": "t5_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t5_m1",
+            "t5_m2",
+            "t5_m3",
+            "t5_m4",
+            "t5_m5"
+          ],
+          "date": "2026-03-22"
+        },
+        {
+          "id": "t5_e16",
+          "description": "Shared jeep to Shivpuri",
+          "amount": 4270,
+          "category": "Transport",
+          "paid_by": "t5_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t5_m1",
+            "t5_m2",
+            "t5_m3",
+            "t5_m4",
+            "t5_m5"
+          ],
+          "date": "2026-03-22"
+        },
+        {
+          "id": "t5_e17",
+          "description": "Camp balance payment",
+          "amount": 12500,
+          "category": "Stay",
+          "paid_by": "t5_m2",
+          "split_type": "equal",
+          "split_among": [
+            "t5_m1",
+            "t5_m2",
+            "t5_m3",
+            "t5_m4",
+            "t5_m5"
+          ],
+          "date": "2026-03-23"
+        },
+        {
+          "id": "t5_e18",
+          "description": "16km white-water rafting",
+          "amount": 1450,
+          "category": "Activities",
+          "paid_by": "t5_m4",
+          "split_type": "exact",
+          "split_among": [
+            "t5_m1",
+            "t5_m4",
+            "t5_m5"
+          ],
+          "date": "2026-03-23",
+          "shares": {
+            "t5_m1": 520,
+            "t5_m4": 490,
+            "t5_m5": 440
+          }
+        },
+        {
+          "id": "t5_e19",
+          "description": "Ginger lemon honey tea",
+          "amount": 3900,
+          "category": "Drinks",
+          "paid_by": "t5_m1",
+          "split_type": "equal",
+          "split_among": [
+            "t5_m1",
+            "t5_m2",
+            "t5_m3",
+            "t5_m5"
+          ],
+          "date": "2026-03-23"
+        },
+        {
+          "id": "t5_e20",
+          "description": "Ganga-view cafe brunch",
+          "amount": 810,
+          "category": "Food",
+          "paid_by": "t5_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t5_m2",
+            "t5_m4",
+            "t5_m5"
+          ],
+          "date": "2026-03-23"
+        },
+        {
+          "id": "t5_e21",
+          "description": "Camp buffet dinner",
+          "amount": 6430,
+          "category": "Food",
+          "paid_by": "t5_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t5_m1",
+            "t5_m2",
+            "t5_m3",
+            "t5_m4",
+            "t5_m5"
+          ],
+          "date": "2026-03-23"
+        },
+        {
+          "id": "t5_e22",
+          "description": "Aloo paratha breakfast",
+          "amount": 5390,
+          "category": "Food",
+          "paid_by": "t5_m3",
+          "split_type": "exact",
+          "split_among": [
+            "t5_m1",
+            "t5_m2",
+            "t5_m3",
+            "t5_m4",
+            "t5_m5"
+          ],
+          "date": "2026-03-23",
+          "shares": {
+            "t5_m1": 1060,
+            "t5_m2": 1240,
+            "t5_m3": 1040,
+            "t5_m4": 1330,
+            "t5_m5": 720
+          }
+        },
+        {
+          "id": "t5_e23",
+          "description": "Haridwar highway petrol",
+          "amount": 1080,
+          "category": "Fuel",
+          "paid_by": "t5_m3",
+          "split_type": "equal",
+          "split_among": [
+            "t5_m1",
+            "t5_m2",
+            "t5_m3",
+            "t5_m4",
+            "t5_m5"
+          ],
+          "date": "2026-03-23"
+        },
+        {
+          "id": "t5_e24",
+          "description": "Electrolytes & water",
+          "amount": 960,
+          "category": "Groceries",
+          "paid_by": "t5_m1",
+          "split_type": "exact",
+          "split_among": [
+            "t5_m1",
+            "t5_m2",
+            "t5_m3",
+            "t5_m4",
+            "t5_m5"
+          ],
+          "date": "2026-03-23",
+          "shares": {
+            "t5_m1": 260,
+            "t5_m2": 100,
+            "t5_m3": 140,
+            "t5_m4": 250,
+            "t5_m5": 210
+          }
+        },
+        {
+          "id": "t5_e25",
+          "description": "Return cab to station",
+          "amount": 1010,
+          "category": "Transport",
+          "paid_by": "t5_m2",
+          "split_type": "equal",
+          "split_among": [
+            "t5_m1",
+            "t5_m2",
+            "t5_m3",
+            "t5_m4",
+            "t5_m5"
+          ],
+          "date": "2026-03-23"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "trips": [
+    {
+      "trip_id": "trip1",
+      "trip": "Goa Beach Week",
+      "currency": "INR",
+      "balances": {
+        "Aarav": 46326,
+        "Meera": -7088,
+        "Kabir": -12112,
+        "Isha": -10647,
+        "Rohan": 7008,
+        "Tara": -23487
+      },
+      "minimum_payments_count": 5,
+      "payments": [
+        {
+          "frm": "Tara",
+          "to": "Aarav",
+          "amount": 23487
+        },
+        {
+          "frm": "Kabir",
+          "to": "Aarav",
+          "amount": 12112
+        },
+        {
+          "frm": "Isha",
+          "to": "Aarav",
+          "amount": 10647
+        },
+        {
+          "frm": "Meera",
+          "to": "Rohan",
+          "amount": 7008
+        },
+        {
+          "frm": "Meera",
+          "to": "Aarav",
+          "amount": 80
+        }
+      ]
+    },
+    {
+      "trip_id": "trip2",
+      "trip": "Manali Snow Escape",
+      "currency": "INR",
+      "balances": {
+        "Vikram": -9241,
+        "Anaya": 22419,
+        "Dev": -8221,
+        "Sana": 13249,
+        "Neel": -18206
+      },
+      "minimum_payments_count": 4,
+      "payments": [
+        {
+          "frm": "Neel",
+          "to": "Anaya",
+          "amount": 18206
+        },
+        {
+          "frm": "Vikram",
+          "to": "Sana",
+          "amount": 9241
+        },
+        {
+          "frm": "Dev",
+          "to": "Anaya",
+          "amount": 4213
+        },
+        {
+          "frm": "Dev",
+          "to": "Sana",
+          "amount": 4008
+        }
+      ]
+    },
+    {
+      "trip_id": "trip3",
+      "trip": "Jaipur Heritage Weekend",
+      "currency": "INR",
+      "balances": {
+        "Zoya": 21235,
+        "Arjun": 930,
+        "Pia": -8115,
+        "Yash": -14050
+      },
+      "minimum_payments_count": 3,
+      "payments": [
+        {
+          "frm": "Yash",
+          "to": "Zoya",
+          "amount": 14050
+        },
+        {
+          "frm": "Pia",
+          "to": "Zoya",
+          "amount": 7185
+        },
+        {
+          "frm": "Pia",
+          "to": "Arjun",
+          "amount": 930
+        }
+      ]
+    },
+    {
+      "trip_id": "trip4",
+      "trip": "Kerala Backwaters",
+      "currency": "INR",
+      "balances": {
+        "Nikhil": -3069,
+        "Riya": 17172,
+        "Samar": 427,
+        "Diya": 2433,
+        "Kunal": -12130,
+        "Mira": 11657,
+        "Ishaan": -16490
+      },
+      "minimum_payments_count": 6,
+      "payments": [
+        {
+          "frm": "Ishaan",
+          "to": "Riya",
+          "amount": 16490
+        },
+        {
+          "frm": "Kunal",
+          "to": "Mira",
+          "amount": 11657
+        },
+        {
+          "frm": "Nikhil",
+          "to": "Diya",
+          "amount": 2433
+        },
+        {
+          "frm": "Nikhil",
+          "to": "Riya",
+          "amount": 636
+        },
+        {
+          "frm": "Kunal",
+          "to": "Samar",
+          "amount": 427
+        },
+        {
+          "frm": "Kunal",
+          "to": "Riya",
+          "amount": 46
+        }
+      ]
+    },
+    {
+      "trip_id": "trip5",
+      "trip": "Rishikesh Rafting Trip",
+      "currency": "INR",
+      "balances": {
+        "Parth": -5083,
+        "Naina": 20707,
+        "Veer": 12912,
+        "Ria": -8563,
+        "Om": -19973
+      },
+      "minimum_payments_count": 4,
+      "payments": [
+        {
+          "frm": "Om",
+          "to": "Naina",
+          "amount": 19973
+        },
+        {
+          "frm": "Ria",
+          "to": "Veer",
+          "amount": 8563
+        },
+        {
+          "frm": "Parth",
+          "to": "Veer",
+          "amount": 4349
+        },
+        {
+          "frm": "Parth",
+          "to": "Naina",
+          "amount": 734
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+trip,expense_id,date,description,category,amount_inr,paid_by,split_type,split_among
+Goa Beach Week,t1_e1,2026-01-10,Beachfront villa advance,Stay,33000,Aarav,equal,Aarav|Meera|Kabir|Isha|Rohan|Tara
+Goa Beach Week,t1_e2,2026-01-10,Scuba intro dive,Activities,7200,Aarav,equal,Aarav|Meera|Kabir|Isha|Rohan|Tara
+Goa Beach Week,t1_e3,2026-01-10,Sunset mocktails & beers,Drinks,740,Kabir,equal,Meera|Kabir|Isha|Rohan|Tara
+Goa Beach Week,t1_e4,2026-01-10,Seafood dinner at Baga,Food,1770,Rohan,equal,Aarav|Meera|Kabir|Isha|Rohan|Tara
+Goa Beach Week,t1_e5,2026-01-10,Goan curry & rice,Food,1290,Kabir,exact,Meera|Isha|Rohan
+Goa Beach Week,t1_e6,2026-01-10,Seafood dinner at Baga,Food,2670,Rohan,exact,Meera|Kabir|Tara
+Goa Beach Week,t1_e7,2026-01-10,Fish thali lunch,Food,860,Aarav,equal,Meera|Rohan
+Goa Beach Week,t1_e8,2026-01-10,Cashews & local spices,Shopping,1030,Rohan,equal,Meera|Tara
+Goa Beach Week,t1_e9,2026-01-10,Airport cab transfer,Transport,3630,Aarav,exact,Aarav|Meera|Kabir|Isha|Rohan|Tara
+Goa Beach Week,t1_e10,2026-01-10,Scooter rentals (3 days),Transport,4380,Aarav,equal,Aarav|Meera|Kabir|Isha|Rohan|Tara
+Goa Beach Week,t1_e11,2026-01-11,Parasailing session,Activities,2850,Rohan,equal,Aarav|Meera|Kabir|Isha|Rohan|Tara
+Goa Beach Week,t1_e12,2026-01-11,Dolphin boat tour,Activities,1350,Aarav,equal,Aarav|Meera|Rohan
+Goa Beach Week,t1_e13,2026-01-11,Tandoori grill platter,Food,1770,Aarav,equal,Aarav|Meera|Isha
+Goa Beach Week,t1_e14,2026-01-12,Jet ski & banana boat,Activities,3600,Aarav,equal,Aarav|Meera|Kabir|Isha|Rohan|Tara
+Goa Beach Week,t1_e15,2026-01-12,Late-night burger run,Food,2460,Rohan,equal,Aarav|Meera|Kabir|Isha|Rohan|Tara
+Goa Beach Week,t1_e16,2026-01-12,Goan curry & rice,Food,840,Kabir,equal,Aarav|Meera|Kabir|Isha|Rohan|Tara
+Goa Beach Week,t1_e17,2026-01-12,Petrol fill-up for scooters,Fuel,1470,Rohan,equal,Aarav|Meera|Kabir|Isha|Rohan|Tara
+Goa Beach Week,t1_e18,2026-01-12,Return cab to station,Transport,1860,Aarav,equal,Aarav|Meera|Kabir|Isha|Rohan|Tara
+Goa Beach Week,t1_e19,2026-01-13,Parasailing session,Activities,1250,Aarav,equal,Rohan|Tara
+Goa Beach Week,t1_e20,2026-01-13,Beach shack cocktails,Drinks,3130,Aarav,equal,Meera|Tara
+Goa Beach Week,t1_e21,2026-01-13,Fresh coconut water round,Drinks,470,Aarav,equal,Isha|Rohan
+Goa Beach Week,t1_e22,2026-01-13,Fish thali lunch,Food,5880,Isha,equal,Meera|Kabir|Isha|Tara
+Goa Beach Week,t1_e23,2026-01-13,Beach shack breakfast,Food,870,Meera,equal,Aarav|Meera|Kabir|Isha|Rohan|Tara
+Goa Beach Week,t1_e24,2026-01-13,Portuguese cafe brunch,Food,3670,Kabir,equal,Aarav|Kabir|Isha|Rohan|Tara
+Goa Beach Week,t1_e25,2026-01-13,Beach shack breakfast,Food,1640,Rohan,equal,Isha|Tara
+Goa Beach Week,t1_e26,2026-01-13,Breakfast bread & eggs,Groceries,630,Meera,equal,Aarav|Meera|Kabir|Isha|Rohan|Tara
+Goa Beach Week,t1_e27,2026-01-13,Anjuna flea market tees,Shopping,1950,Kabir,exact,Aarav|Meera|Kabir|Isha|Rohan|Tara
+Goa Beach Week,t1_e28,2026-01-13,Chapora local taxi,Transport,1680,Rohan,equal,Aarav|Meera|Kabir|Isha|Rohan|Tara
+Goa Beach Week,t1_e29,2026-01-13,Airport cab transfer,Transport,3030,Isha,equal,Aarav|Meera|Kabir|Isha|Rohan|Tara
+Goa Beach Week,t1_e30,2026-01-13,Scooter rentals (3 days),Transport,870,Isha,equal,Aarav|Meera|Kabir|Isha|Rohan|Tara
+Goa Beach Week,t1_e31,2026-01-14,Jet ski & banana boat,Activities,9000,Meera,equal,Kabir|Isha|Tara
+Goa Beach Week,t1_e32,2026-01-14,Evening craft beer pitcher,Drinks,2160,Meera,equal,Aarav|Meera|Kabir|Isha|Rohan|Tara
+Goa Beach Week,t1_e33,2026-01-14,Tandoori grill platter,Food,1590,Isha,equal,Aarav|Meera|Kabir|Isha|Rohan|Tara
+Goa Beach Week,t1_e34,2026-01-14,Portuguese cafe brunch,Food,5760,Rohan,equal,Aarav|Meera|Kabir|Isha|Rohan|Tara
+Goa Beach Week,t1_e35,2026-01-14,Highway fuel top-up,Fuel,3030,Rohan,equal,Aarav|Meera|Kabir|Isha|Rohan|Tara
+Goa Beach Week,t1_e36,2026-01-14,Water bottles & ice box,Groceries,1530,Meera,equal,Aarav|Meera|Kabir|Isha|Rohan|Tara
+Manali Snow Escape,t2_e1,2026-02-05,Snow-view wooden cabin,Stay,26000,Anaya,equal,Vikram|Anaya|Dev|Sana|Neel
+Manali Snow Escape,t2_e2,2026-02-05,Ginger honey lemon tea,Drinks,1040,Sana,equal,Vikram|Anaya|Dev|Sana
+Manali Snow Escape,t2_e3,2026-02-05,Woodfired pizza night,Food,5900,Sana,equal,Anaya|Dev|Sana|Neel
+Manali Snow Escape,t2_e4,2026-02-05,Hot momos & thukpa,Food,3780,Dev,equal,Anaya|Dev|Sana
+Manali Snow Escape,t2_e5,2026-02-05,Diesel tank full before Rohtang,Fuel,2760,Dev,equal,Vikram|Anaya|Dev|Sana|Neel
+Manali Snow Escape,t2_e6,2026-02-05,Kullu shawl souvenirs,Shopping,2410,Sana,equal,Vikram|Dev
+Manali Snow Escape,t2_e7,2026-02-05,Thermal socks & mufflers,Shopping,1950,Sana,equal,Vikram|Anaya|Dev|Sana|Neel
+Manali Snow Escape,t2_e8,2026-02-05,Overnight Volvo luggage drop,Transport,3050,Anaya,equal,Vikram|Anaya|Dev|Sana|Neel
+Manali Snow Escape,t2_e9,2026-02-06,Paragliding in Solang,Activities,4500,Sana,equal,Anaya|Sana
+Manali Snow Escape,t2_e10,2026-02-06,Diesel tank full before Rohtang,Fuel,2580,Dev,equal,Vikram|Anaya|Dev|Sana|Neel
+Manali Snow Escape,t2_e11,2026-02-06,Highway fuel stop,Fuel,1150,Dev,equal,Vikram|Anaya|Dev|Sana|Neel
+Manali Snow Escape,t2_e12,2026-02-06,Atal Tunnel permit & taxi,Transport,3210,Sana,exact,Vikram|Anaya|Dev|Sana|Neel
+Manali Snow Escape,t2_e13,2026-02-06,Auto back from Mall Road,Transport,3610,Sana,equal,Vikram|Anaya|Dev|Sana|Neel
+Manali Snow Escape,t2_e14,2026-02-07,Bonfire hot chocolate,Drinks,800,Vikram,equal,Vikram|Anaya|Dev|Sana|Neel
+Manali Snow Escape,t2_e15,2026-02-07,Riverside Maggi & chai,Food,830,Anaya,equal,Vikram|Anaya|Dev|Sana|Neel
+Manali Snow Escape,t2_e16,2026-02-07,Mountain petrol refill,Fuel,1070,Sana,equal,Vikram|Anaya|Dev|Sana|Neel
+Manali Snow Escape,t2_e17,2026-02-08,Himachali trout dinner,Food,730,Anaya,equal,Vikram|Anaya|Dev|Sana|Neel
+Manali Snow Escape,t2_e18,2026-02-08,Hot momos & thukpa,Food,4140,Sana,equal,Vikram|Anaya|Dev
+Manali Snow Escape,t2_e19,2026-02-08,Old Manali cafe brunch,Food,5770,Sana,equal,Vikram|Anaya|Dev|Sana|Neel
+Manali Snow Escape,t2_e20,2026-02-08,Highway dhaba lunch,Food,2190,Vikram,equal,Vikram|Anaya|Dev|Sana|Neel
+Manali Snow Escape,t2_e21,2026-02-09,Cabin balance settlement,Stay,14000,Anaya,equal,Vikram|Anaya|Dev|Sana|Neel
+Manali Snow Escape,t2_e22,2026-02-09,Craft cider & beers,Drinks,1830,Vikram,equal,Anaya|Dev|Neel
+Manali Snow Escape,t2_e23,2026-02-09,Spiced apple juice round,Drinks,580,Dev,exact,Anaya|Dev|Sana
+Manali Snow Escape,t2_e24,2026-02-09,Himachali trout dinner,Food,2030,Vikram,exact,Vikram|Anaya|Sana
+Manali Snow Escape,t2_e25,2026-02-09,Woollen caps & gloves,Shopping,2970,Dev,equal,Dev|Neel
+Manali Snow Escape,t2_e26,2026-02-09,Overnight Volvo luggage drop,Transport,580,Vikram,equal,Vikram|Anaya|Dev|Sana|Neel
+Manali Snow Escape,t2_e27,2026-02-09,Local cab to Solang,Transport,390,Dev,equal,Vikram|Anaya|Dev|Sana|Neel
+Manali Snow Escape,t2_e28,2026-02-09,Local cab to Solang,Transport,1520,Vikram,equal,Vikram|Anaya|Dev|Sana|Neel
+Jaipur Heritage Weekend,t3_e1,2026-02-20,Heritage haveli booking,Stay,21000,Zoya,equal,Zoya|Arjun|Pia|Yash
+Jaipur Heritage Weekend,t3_e2,2026-02-20,Rajasthani dal baati dinner,Food,1500,Zoya,equal,Arjun|Pia|Yash
+Jaipur Heritage Weekend,t3_e3,2026-02-20,Jaipur thali lunch,Food,5580,Yash,equal,Zoya|Arjun|Pia|Yash
+Jaipur Heritage Weekend,t3_e4,2026-02-20,Lac bangles & mojris,Shopping,2060,Zoya,equal,Arjun|Yash
+Jaipur Heritage Weekend,t3_e5,2026-02-20,Old City e-rickshaws,Transport,300,Pia,equal,Zoya|Arjun|Pia|Yash
+Jaipur Heritage Weekend,t3_e6,2026-02-20,Cab to Amer Fort,Transport,1040,Zoya,equal,Zoya|Arjun|Pia|Yash
+Jaipur Heritage Weekend,t3_e7,2026-02-21,Chokhi Dhani folk evening,Activities,2700,Zoya,equal,Arjun|Yash
+Jaipur Heritage Weekend,t3_e8,2026-02-21,Nahargarh sunset pass,Activities,1750,Zoya,exact,Zoya|Arjun
+Jaipur Heritage Weekend,t3_e9,2026-02-21,Kesar pista lassi round,Drinks,1300,Pia,equal,Zoya|Arjun|Pia|Yash
+Jaipur Heritage Weekend,t3_e10,2026-02-21,Highway petrol fill-up,Fuel,2600,Arjun,equal,Zoya|Arjun|Pia|Yash
+Jaipur Heritage Weekend,t3_e11,2026-02-21,City fuel top-up,Fuel,3000,Arjun,equal,Zoya|Arjun|Pia|Yash
+Jaipur Heritage Weekend,t3_e12,2026-02-21,Water bottles & ORS,Groceries,480,Zoya,equal,Zoya|Arjun|Pia|Yash
+Jaipur Heritage Weekend,t3_e13,2026-02-21,Block-print cotton kurtas,Shopping,1930,Zoya,equal,Arjun|Yash
+Jaipur Heritage Weekend,t3_e14,2026-02-21,Station pickup cab,Transport,2830,Zoya,exact,Zoya|Arjun|Pia|Yash
+Jaipur Heritage Weekend,t3_e15,2026-02-22,Haveli final balance,Stay,13500,Arjun,equal,Zoya|Arjun|Pia|Yash
+Jaipur Heritage Weekend,t3_e16,2026-02-22,Amer Fort entry & guide,Activities,1200,Zoya,equal,Zoya|Arjun|Pia
+Jaipur Heritage Weekend,t3_e17,2026-02-22,Lassi & kachori breakfast,Food,1410,Pia,equal,Zoya|Arjun|Yash
+Jaipur Heritage Weekend,t3_e18,2026-02-22,Rooftop fort-view dinner,Food,5500,Pia,equal,Zoya|Arjun|Pia|Yash
+Jaipur Heritage Weekend,t3_e19,2026-02-22,Chai & samosa pitstop,Food,720,Arjun,equal,Zoya|Arjun|Yash
+Jaipur Heritage Weekend,t3_e20,2026-02-22,Road-trip snacks,Groceries,1760,Arjun,equal,Zoya|Arjun|Pia|Yash
+Jaipur Heritage Weekend,t3_e21,2026-02-22,Blue pottery coasters,Shopping,1010,Arjun,exact,Zoya|Arjun|Pia|Yash
+Jaipur Heritage Weekend,t3_e22,2026-02-22,Cab to Amer Fort,Transport,1480,Zoya,equal,Zoya|Arjun|Pia|Yash
+Kerala Backwaters,t4_e1,2026-03-04,Alleppey houseboat booking,Stay,24500,Riya,equal,Nikhil|Riya|Samar|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e2,2026-03-04,Shikara canoe ride,Activities,1350,Diya,equal,Nikhil|Riya|Samar|Mira|Ishaan
+Kerala Backwaters,t4_e3,2026-03-04,Tea museum tour,Activities,4200,Nikhil,equal,Nikhil|Riya|Samar|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e4,2026-03-04,Filter coffee round,Drinks,3240,Samar,equal,Riya|Ishaan
+Kerala Backwaters,t4_e5,2026-03-04,Evening toddy shop drinks,Drinks,2360,Samar,equal,Nikhil|Diya|Kunal|Ishaan
+Kerala Backwaters,t4_e6,2026-03-04,Bakery puffs & coffee,Food,4620,Nikhil,exact,Nikhil|Riya|Samar|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e7,2026-03-04,Highway diesel refill,Fuel,1400,Samar,equal,Nikhil|Riya|Samar|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e8,2026-03-04,Return fuel top-up,Fuel,2100,Riya,equal,Nikhil|Riya|Samar|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e9,2026-03-04,Kochi airport Tempo Traveller,Transport,2520,Mira,equal,Nikhil|Riya|Samar|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e10,2026-03-05,Periyar boat safari,Activities,1550,Diya,equal,Riya|Ishaan
+Kerala Backwaters,t4_e11,2026-03-05,Shikara canoe ride,Activities,8850,Diya,equal,Nikhil|Riya|Samar|Diya|Kunal
+Kerala Backwaters,t4_e12,2026-03-05,Tender coconut stop,Drinks,1050,Samar,equal,Riya|Samar|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e13,2026-03-05,Fresh lime soda & shakes,Drinks,2030,Riya,exact,Nikhil|Riya|Samar|Diya|Mira
+Kerala Backwaters,t4_e14,2026-03-05,Tea garden cafe snacks,Food,1490,Ishaan,equal,Nikhil|Riya|Samar|Diya|Mira
+Kerala Backwaters,t4_e15,2026-03-05,Sadya banana-leaf lunch,Food,2450,Samar,equal,Nikhil|Riya|Samar|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e16,2026-03-05,Mosquito repellent & snacks,Groceries,1680,Riya,equal,Nikhil|Riya|Samar|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e17,2026-03-05,Morning fruit basket,Groceries,280,Diya,equal,Nikhil|Riya|Samar|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e18,2026-03-05,Morning fruit basket,Groceries,1610,Samar,equal,Nikhil|Riya|Samar|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e19,2026-03-05,Water cans & banana chips,Groceries,1050,Mira,equal,Nikhil|Riya|Samar|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e20,2026-03-06,Kathakali evening show,Activities,3150,Nikhil,equal,Riya|Samar|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e21,2026-03-06,Ayurvedic massage session,Activities,1650,Samar,exact,Riya|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e22,2026-03-06,Tender coconut stop,Drinks,3580,Kunal,exact,Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e23,2026-03-06,Karimeen pollichathu dinner,Food,2080,Mira,exact,Nikhil|Riya|Samar|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e24,2026-03-06,Cardamom & black pepper,Shopping,480,Riya,equal,Kunal|Mira
+Kerala Backwaters,t4_e25,2026-03-06,Public backwater ferry,Transport,2870,Diya,equal,Nikhil|Riya|Samar|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e26,2026-03-07,Kathakali evening show,Activities,5250,Mira,equal,Nikhil|Riya|Samar|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e27,2026-03-07,Water cans & banana chips,Groceries,280,Riya,equal,Nikhil|Riya|Samar|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e28,2026-03-07,Water cans & banana chips,Groceries,270,Nikhil,equal,Nikhil|Samar|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e29,2026-03-07,Mosquito repellent & snacks,Groceries,1750,Mira,equal,Nikhil|Riya|Samar|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e30,2026-03-07,Kasavu cotton mundu,Shopping,1120,Riya,equal,Nikhil|Riya|Samar|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e31,2026-03-08,Appam & stew breakfast,Food,4130,Diya,equal,Nikhil|Riya|Samar|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e32,2026-03-08,Karimeen pollichathu dinner,Food,2670,Mira,equal,Samar|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e33,2026-03-08,Coastal seafood platter,Food,1290,Samar,equal,Nikhil|Samar|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e34,2026-03-09,Sadya banana-leaf lunch,Food,4910,Riya,equal,Nikhil|Samar|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e35,2026-03-09,Malabar parotta & curry,Food,4340,Kunal,equal,Nikhil|Riya|Samar|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e36,2026-03-09,Appam & stew breakfast,Food,6150,Mira,equal,Riya|Kunal
+Kerala Backwaters,t4_e37,2026-03-09,Malabar parotta & curry,Food,4200,Mira,equal,Nikhil|Riya|Samar|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e38,2026-03-09,Hill-climb petrol fill-up,Fuel,1190,Samar,equal,Nikhil|Riya|Samar|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e39,2026-03-09,Mosquito repellent & snacks,Groceries,1680,Mira,equal,Nikhil|Riya|Samar|Diya|Kunal|Mira|Ishaan
+Kerala Backwaters,t4_e40,2026-03-09,Handmade coconut bowls,Shopping,660,Nikhil,equal,Nikhil|Samar|Diya|Kunal|Mira|Ishaan
+Rishikesh Rafting Trip,t5_e1,2026-03-20,Riverside tent camp,Stay,23000,Naina,equal,Parth|Naina|Veer|Ria|Om
+Rishikesh Rafting Trip,t5_e2,2026-03-20,Cliff jumping & body surfing,Activities,2150,Parth,equal,Parth|Naina|Veer|Ria|Om
+Rishikesh Rafting Trip,t5_e3,2026-03-20,Ginger lemon honey tea,Drinks,2850,Veer,equal,Parth|Naina|Veer|Ria|Om
+Rishikesh Rafting Trip,t5_e4,2026-03-20,Pahadi thali lunch,Food,4910,Ria,equal,Parth|Naina|Veer|Ria|Om
+Rishikesh Rafting Trip,t5_e5,2026-03-20,Shared jeep to Shivpuri,Transport,2120,Veer,equal,Parth|Naina|Veer|Ria|Om
+Rishikesh Rafting Trip,t5_e6,2026-03-21,Fresh fruit juices,Drinks,2310,Veer,equal,Parth|Naina|Veer|Ria|Om
+Rishikesh Rafting Trip,t5_e7,2026-03-21,Haridwar highway petrol,Fuel,2500,Veer,equal,Parth|Naina|Veer|Ria|Om
+Rishikesh Rafting Trip,t5_e8,2026-03-21,Auto to Triveni Ghat,Transport,4140,Naina,equal,Parth|Naina|Veer|Ria|Om
+Rishikesh Rafting Trip,t5_e9,2026-03-22,Cold coffee at Laxman Jhula,Drinks,750,Ria,equal,Naina|Veer|Om
+Rishikesh Rafting Trip,t5_e10,2026-03-22,Cold coffee at Laxman Jhula,Drinks,2330,Ria,equal,Veer|Ria
+Rishikesh Rafting Trip,t5_e11,2026-03-22,Aloo paratha breakfast,Food,1850,Parth,equal,Parth|Naina|Veer|Ria|Om
+Rishikesh Rafting Trip,t5_e12,2026-03-22,Evening momos & soup,Food,1530,Ria,equal,Parth|Naina|Om
+Rishikesh Rafting Trip,t5_e13,2026-03-22,Ganga-view cafe brunch,Food,1710,Parth,equal,Parth|Naina|Om
+Rishikesh Rafting Trip,t5_e14,2026-03-22,Camp buffet dinner,Food,5910,Veer,equal,Parth|Naina|Veer|Ria|Om
+Rishikesh Rafting Trip,t5_e15,2026-03-22,Hill fuel top-up,Fuel,3110,Veer,equal,Parth|Naina|Veer|Ria|Om
+Rishikesh Rafting Trip,t5_e16,2026-03-22,Shared jeep to Shivpuri,Transport,4270,Parth,equal,Parth|Naina|Veer|Ria|Om
+Rishikesh Rafting Trip,t5_e17,2026-03-23,Camp balance payment,Stay,12500,Naina,equal,Parth|Naina|Veer|Ria|Om
+Rishikesh Rafting Trip,t5_e18,2026-03-23,16km white-water rafting,Activities,1450,Ria,exact,Parth|Ria|Om
+Rishikesh Rafting Trip,t5_e19,2026-03-23,Ginger lemon honey tea,Drinks,3900,Parth,equal,Parth|Naina|Veer|Om
+Rishikesh Rafting Trip,t5_e20,2026-03-23,Ganga-view cafe brunch,Food,810,Veer,equal,Naina|Ria|Om
+Rishikesh Rafting Trip,t5_e21,2026-03-23,Camp buffet dinner,Food,6430,Veer,equal,Parth|Naina|Veer|Ria|Om
+Rishikesh Rafting Trip,t5_e22,2026-03-23,Aloo paratha breakfast,Food,5390,Veer,exact,Parth|Naina|Veer|Ria|Om
+Rishikesh Rafting Trip,t5_e23,2026-03-23,Haridwar highway petrol,Fuel,1080,Veer,equal,Parth|Naina|Veer|Ria|Om
+Rishikesh Rafting Trip,t5_e24,2026-03-23,Electrolytes & water,Groceries,960,Parth,exact,Parth|Naina|Veer|Ria|Om
+Rishikesh Rafting Trip,t5_e25,2026-03-23,Return cab to station,Transport,1010,Naina,equal,Parth|Naina|Veer|Ria|Om

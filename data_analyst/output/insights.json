@@ -1,0 +1,344 @@
+{
+  "overall": {
+    "total_expenses": 151,
+    "total_inr": 517930,
+    "category_ranking": [
+      {
+        "category": "Stay",
+        "total": 167500,
+        "pct": 32.3
+      },
+      {
+        "category": "Food",
+        "total": 138020,
+        "pct": 26.6
+      },
+      {
+        "category": "Activities",
+        "total": 65000,
+        "pct": 12.5
+      },
+      {
+        "category": "Transport",
+        "total": 50390,
+        "pct": 9.7
+      },
+      {
+        "category": "Drinks",
+        "total": 36450,
+        "pct": 7.0
+      },
+      {
+        "category": "Fuel",
+        "total": 29040,
+        "pct": 5.6
+      },
+      {
+        "category": "Shopping",
+        "total": 17570,
+        "pct": 3.4
+      },
+      {
+        "category": "Groceries",
+        "total": 13960,
+        "pct": 2.7
+      }
+    ],
+    "payers_by_count": [
+      {
+        "name": "Aarav",
+        "trip": "Goa Beach Week",
+        "expenses_paid": 12,
+        "paid_inr": 62500
+      },
+      {
+        "name": "Zoya",
+        "trip": "Jaipur Heritage Weekend",
+        "expenses_paid": 11,
+        "paid_inr": 37970
+      },
+      {
+        "name": "Sana",
+        "trip": "Manali Snow Escape",
+        "expenses_paid": 10,
+        "paid_inr": 33600
+      },
+      {
+        "name": "Veer",
+        "trip": "Rishikesh Rafting Trip",
+        "expenses_paid": 10,
+        "paid_inr": 32510
+      },
+      {
+        "name": "Rohan",
+        "trip": "Goa Beach Week",
+        "expenses_paid": 10,
+        "paid_inr": 24360
+      }
+    ],
+    "payers_by_amount": [
+      {
+        "name": "Aarav",
+        "trip": "Goa Beach Week",
+        "paid_inr": 62500,
+        "expenses_paid": 12
+      },
+      {
+        "name": "Anaya",
+        "trip": "Manali Snow Escape",
+        "paid_inr": 44610,
+        "expenses_paid": 5
+      },
+      {
+        "name": "Naina",
+        "trip": "Rishikesh Rafting Trip",
+        "paid_inr": 40650,
+        "expenses_paid": 4
+      },
+      {
+        "name": "Zoya",
+        "trip": "Jaipur Heritage Weekend",
+        "paid_inr": 37970,
+        "expenses_paid": 11
+      },
+      {
+        "name": "Riya",
+        "trip": "Kerala Backwaters",
+        "paid_inr": 37100,
+        "expenses_paid": 8
+      }
+    ]
+  },
+  "per_trip": [
+    {
+      "trip": "Goa Beach Week",
+      "members": 6,
+      "expenses": 36,
+      "total_inr": 120910,
+      "per_person_inr": 20152,
+      "top_categories": [
+        {
+          "category": "Stay",
+          "total": 33000,
+          "pct": 27.3
+        },
+        {
+          "category": "Food",
+          "total": 31070,
+          "pct": 25.7
+        },
+        {
+          "category": "Activities",
+          "total": 25250,
+          "pct": 20.9
+        }
+      ],
+      "most_frequent_payer": {
+        "name": "Aarav",
+        "expenses_paid": 12
+      },
+      "biggest_spender": {
+        "name": "Aarav",
+        "paid_inr": 62500
+      },
+      "least_frequent_payer": {
+        "name": "Tara",
+        "expenses_paid": 0
+      },
+      "partial_split_pct": 38.9,
+      "biggest_single_expense": {
+        "id": "t1_e1",
+        "description": "Beachfront villa advance",
+        "category": "Stay",
+        "amount_inr": 33000,
+        "paid_by": "Aarav"
+      },
+      "settle_payments": 5,
+      "naive_payments": 15
+    },
+    {
+      "trip": "Manali Snow Escape",
+      "members": 5,
+      "expenses": 28,
+      "total_inr": 101370,
+      "per_person_inr": 20274,
+      "top_categories": [
+        {
+          "category": "Stay",
+          "total": 40000,
+          "pct": 39.5
+        },
+        {
+          "category": "Food",
+          "total": 25370,
+          "pct": 25.0
+        },
+        {
+          "category": "Transport",
+          "total": 12360,
+          "pct": 12.2
+        }
+      ],
+      "most_frequent_payer": {
+        "name": "Sana",
+        "expenses_paid": 10
+      },
+      "biggest_spender": {
+        "name": "Anaya",
+        "paid_inr": 44610
+      },
+      "least_frequent_payer": {
+        "name": "Neel",
+        "expenses_paid": 0
+      },
+      "partial_split_pct": 35.7,
+      "biggest_single_expense": {
+        "id": "t2_e1",
+        "description": "Snow-view wooden cabin",
+        "category": "Stay",
+        "amount_inr": 26000,
+        "paid_by": "Anaya"
+      },
+      "settle_payments": 4,
+      "naive_payments": 10
+    },
+    {
+      "trip": "Jaipur Heritage Weekend",
+      "members": 4,
+      "expenses": 22,
+      "total_inr": 74650,
+      "per_person_inr": 18662,
+      "top_categories": [
+        {
+          "category": "Stay",
+          "total": 34500,
+          "pct": 46.2
+        },
+        {
+          "category": "Food",
+          "total": 14710,
+          "pct": 19.7
+        },
+        {
+          "category": "Activities",
+          "total": 5650,
+          "pct": 7.6
+        }
+      ],
+      "most_frequent_payer": {
+        "name": "Zoya",
+        "expenses_paid": 11
+      },
+      "biggest_spender": {
+        "name": "Zoya",
+        "paid_inr": 37970
+      },
+      "least_frequent_payer": {
+        "name": "Yash",
+        "expenses_paid": 1
+      },
+      "partial_split_pct": 36.4,
+      "biggest_single_expense": {
+        "id": "t3_e1",
+        "description": "Heritage haveli booking",
+        "category": "Stay",
+        "amount_inr": 21000,
+        "paid_by": "Zoya"
+      },
+      "settle_payments": 3,
+      "naive_payments": 6
+    },
+    {
+      "trip": "Kerala Backwaters",
+      "members": 7,
+      "expenses": 40,
+      "total_inr": 122030,
+      "per_person_inr": 17433,
+      "top_categories": [
+        {
+          "category": "Food",
+          "total": 38330,
+          "pct": 31.4
+        },
+        {
+          "category": "Activities",
+          "total": 26000,
+          "pct": 21.3
+        },
+        {
+          "category": "Stay",
+          "total": 24500,
+          "pct": 20.1
+        }
+      ],
+      "most_frequent_payer": {
+        "name": "Mira",
+        "expenses_paid": 9
+      },
+      "biggest_spender": {
+        "name": "Riya",
+        "paid_inr": 37100
+      },
+      "least_frequent_payer": {
+        "name": "Ishaan",
+        "expenses_paid": 1
+      },
+      "partial_split_pct": 45.0,
+      "biggest_single_expense": {
+        "id": "t4_e1",
+        "description": "Alleppey houseboat booking",
+        "category": "Stay",
+        "amount_inr": 24500,
+        "paid_by": "Riya"
+      },
+      "settle_payments": 6,
+      "naive_payments": 21
+    },
+    {
+      "trip": "Rishikesh Rafting Trip",
+      "members": 5,
+      "expenses": 25,
+      "total_inr": 98970,
+      "per_person_inr": 19794,
+      "top_categories": [
+        {
+          "category": "Stay",
+          "total": 35500,
+          "pct": 35.9
+        },
+        {
+          "category": "Food",
+          "total": 28540,
+          "pct": 28.8
+        },
+        {
+          "category": "Drinks",
+          "total": 12140,
+          "pct": 12.3
+        }
+      ],
+      "most_frequent_payer": {
+        "name": "Veer",
+        "expenses_paid": 10
+      },
+      "biggest_spender": {
+        "name": "Naina",
+        "paid_inr": 40650
+      },
+      "least_frequent_payer": {
+        "name": "Om",
+        "expenses_paid": 0
+      },
+      "partial_split_pct": 28.0,
+      "biggest_single_expense": {
+        "id": "t5_e1",
+        "description": "Riverside tent camp",
+        "category": "Stay",
+        "amount_inr": 23000,
+        "paid_by": "Naina"
+      },
+      "settle_payments": 4,
+      "naive_payments": 10
+    }
+  ]
+}
