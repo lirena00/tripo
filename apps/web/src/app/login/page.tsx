@@ -1,16 +1,9 @@
-"use client";
+import type { Metadata } from "next";
 
-import { useState } from "react";
+import AuthPage from "@/components/auth-page";
 
-import SignInForm from "@/components/sign-in-form";
-import SignUpForm from "@/components/sign-up-form";
+export const metadata: Metadata = { title: "Sign in | Tripo" };
 
 export default function LoginPage() {
-  const [showSignIn, setShowSignIn] = useState(false);
-
-  return showSignIn ? (
-    <SignInForm onSwitchToSignUp={() => setShowSignIn(false)} />
-  ) : (
-    <SignUpForm onSwitchToSignIn={() => setShowSignIn(true)} />
-  );
+	return <AuthPage mode="sign-in" />;
 }

@@ -22,26 +22,27 @@ First, install the dependencies:
 bun install
 ```
 
-## Database Setup
+## Database and Authentication Setup
 
-This project uses PostgreSQL with Drizzle ORM.
+Tripo uses Better Auth with Drizzle and PostgreSQL. The app uses WebSockets for Neon connections and `pg` for other PostgreSQL connections.
 
-1. Make sure you have a PostgreSQL database set up.
-2. Update your `apps/web/.env` file with your PostgreSQL connection details.
+Set these values in the ignored `apps/web/.env.local` file or in your deployment environment.
 
-3. Apply the schema to your database:
+- `DATABASE_URL` is the pooled Neon URL for the app. For local PostgreSQL, use its standard connection URL.
+- `DATABASE_URL_UNPOOLED` is the direct Neon URL for migrations. Drizzle uses `DATABASE_URL` when the direct URL is omitted.
+- `BETTER_AUTH_URL` is `http://localhost:3001` in development. Set it to your app's origin when deploying.
+- `BETTER_AUTH_SECRET` is a secret of at least 32 characters. Generate one with `bun -e "console.log(crypto.randomUUID() + crypto.randomUUID())"`.
+
+If the workspace is linked to a Neon development branch, `neon env pull --file apps/web/.env.local --env DATABASE_URL --env DATABASE_URL_UNPOOLED` supplies the two database URLs.
+
+Apply the checked-in migrations and start the app.
 
 ```bash
-bun run db:push
-```
-
-Then, run the development server:
-
-```bash
+bun run db:migrate
 bun run dev
 ```
 
-Open [http://localhost:3001](http://localhost:3001) in your browser to see the fullstack application.
+Create an account at [Tripo sign-up](http://localhost:3001/signup) or sign in at [Tripo sign-in](http://localhost:3001/login). The dashboard requires a valid session.
 
 ## UI Customization
 
@@ -102,7 +103,7 @@ tripo/
 - `bun run dev:web`: Start only the web application
 - `bun run check-types`: Check TypeScript types across all apps
 - `bun run db:push`: Push schema changes to database
-- `bun run db:generate`: Generate database client/types
+- `bun run db:generate`: Generate migrations from the Drizzle schema
 - `bun run db:migrate`: Run database migrations
 - `bun run db:studio`: Open database studio UI
 - `bun run check`: Run Biome formatting and linting

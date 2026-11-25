@@ -1,40 +1,44 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { ABeeZee, Inter } from "next/font/google";
 
 import "../index.css";
-import Header from "@/components/header";
 import Providers from "@/components/providers";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const inter = Inter({
+	subsets: ["latin"],
+	variable: "--font-inter",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const abeezee = ABeeZee({
+	subsets: ["latin"],
+	variable: "--font-abeezee",
+	weight: "400",
 });
 
 export const metadata: Metadata = {
-  title: "tripo",
-  description: "tripo",
+	description:
+		"Track shared trip expenses, see who owes what, and settle up in fewer payments.",
+	title: "Tripo | Split trip expenses",
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Providers>
-          <div className="grid grid-rows-[auto_1fr] h-svh">
-            <Header />
-            {children}
-          </div>
-        </Providers>
-      </body>
-    </html>
-  );
+	return (
+		<html className={`${inter.variable} ${abeezee.variable}`} lang="en">
+			<body className="min-h-svh antialiased">
+				<Providers>
+					<a
+						className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-20 focus:rounded-md focus:bg-card focus:px-4 focus:py-2"
+						href="#main-content"
+					>
+						Skip to content
+					</a>
+					{children}
+				</Providers>
+			</body>
+		</html>
+	);
 }

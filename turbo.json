@@ -32,8 +32,7 @@
       "interactive": true
     },
     "db:migrate": {
-      "cache": false,
-      "interactive": true
+      "cache": false
     },
     "db:studio": {
       "cache": false,
@@ -45,6 +44,7 @@
     "BETTER_AUTH_URL",
     "CI",
     "DATABASE_URL",
+    "DATABASE_URL_UNPOOLED",
     "NODE_ENV",
     "VERCEL",
     "VERCEL_ENV",

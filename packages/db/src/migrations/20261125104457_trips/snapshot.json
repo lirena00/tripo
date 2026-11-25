@@ -1,0 +1,2002 @@
+{
+  "type": "diff",
+  "version": "9",
+  "dialect": "postgres",
+  "id": "f144940c-9701-4ad3-944a-4a0ebcd05239",
+  "prevIds": [
+    "db1dc675-d227-4af3-80cf-359b1f4a12c7"
+  ],
+  "footprints": [
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "expenses"
+      ],
+      "writes": [
+        "s|tbl|public.expenses",
+        "n|tbl|public.expenses",
+        "e|tbl|public.expenses",
+        "n|rel|public.expenses",
+        "n|type|public.expenses",
+        "n|rel|public.expenses_pkey"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "expense_categories"
+      ],
+      "writes": [
+        "s|tbl|public.expense_categories",
+        "n|tbl|public.expense_categories",
+        "e|tbl|public.expense_categories",
+        "n|rel|public.expense_categories",
+        "n|type|public.expense_categories",
+        "n|rel|public.expense_categories_pkey"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "expense_splits"
+      ],
+      "writes": [
+        "s|tbl|public.expense_splits",
+        "n|tbl|public.expense_splits",
+        "e|tbl|public.expense_splits",
+        "n|rel|public.expense_splits",
+        "n|type|public.expense_splits",
+        "n|rel|public.expense_splits_pkey"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "trips"
+      ],
+      "writes": [
+        "s|tbl|public.trips",
+        "n|tbl|public.trips",
+        "e|tbl|public.trips",
+        "n|rel|public.trips",
+        "n|type|public.trips",
+        "n|rel|public.trips_pkey"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "trip_activity"
+      ],
+      "writes": [
+        "s|tbl|public.trip_activity",
+        "n|tbl|public.trip_activity",
+        "e|tbl|public.trip_activity",
+        "n|rel|public.trip_activity",
+        "n|type|public.trip_activity",
+        "n|rel|public.trip_activity_pkey"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "trip_invitations"
+      ],
+      "writes": [
+        "s|tbl|public.trip_invitations",
+        "n|tbl|public.trip_invitations",
+        "e|tbl|public.trip_invitations",
+        "n|rel|public.trip_invitations",
+        "n|type|public.trip_invitations",
+        "n|rel|public.trip_invitations_pkey"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "trip_members"
+      ],
+      "writes": [
+        "s|tbl|public.trip_members",
+        "n|tbl|public.trip_members",
+        "e|tbl|public.trip_members",
+        "n|rel|public.trip_members",
+        "n|type|public.trip_members",
+        "n|rel|public.trip_members_pkey"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_index",
+      "statementTarget": [
+        "index",
+        "public",
+        "expenses",
+        "expenses_trip_date_idx"
+      ],
+      "writes": [
+        "s|idx|public.expenses_trip_date_idx",
+        "n|idx|public.expenses_trip_date_idx",
+        "e|idx|public.expenses_trip_date_idx",
+        "n|rel|public.expenses_trip_date_idx"
+      ],
+      "reads": [
+        "n|tbl|public.expenses",
+        "n|sch|public",
+        "n|col|public.expenses.trip_id",
+        "n|col|public.expenses.spent_on",
+        "n|col|public.expenses.created_at"
+      ]
+    },
+    {
+      "statementType": "create_index",
+      "statementTarget": [
+        "index",
+        "public",
+        "expense_categories",
+        "expense_categories_trip_name_idx"
+      ],
+      "writes": [
+        "s|idx|public.expense_categories_trip_name_idx",
+        "n|idx|public.expense_categories_trip_name_idx",
+        "e|idx|public.expense_categories_trip_name_idx",
+        "n|rel|public.expense_categories_trip_name_idx"
+      ],
+      "reads": [
+        "n|tbl|public.expense_categories",
+        "n|sch|public",
+        "n|col|public.expense_categories.trip_id"
+      ]
+    },
+    {
+      "statementType": "create_index",
+      "statementTarget": [
+        "index",
+        "public",
+        "expense_splits",
+        "expense_splits_member_idx"
+      ],
+      "writes": [
+        "s|idx|public.expense_splits_member_idx",
+        "n|idx|public.expense_splits_member_idx",
+        "e|idx|public.expense_splits_member_idx",
+        "n|rel|public.expense_splits_member_idx"
+      ],
+      "reads": [
+        "n|tbl|public.expense_splits",
+        "n|sch|public",
+        "n|col|public.expense_splits.member_id"
+      ]
+    },
+    {
+      "statementType": "create_index",
+      "statementTarget": [
+        "index",
+        "public",
+        "trip_activity",
+        "trip_activity_date_idx"
+      ],
+      "writes": [
+        "s|idx|public.trip_activity_date_idx",
+        "n|idx|public.trip_activity_date_idx",
+        "e|idx|public.trip_activity_date_idx",
+        "n|rel|public.trip_activity_date_idx"
+      ],
+      "reads": [
+        "n|tbl|public.trip_activity",
+        "n|sch|public",
+        "n|col|public.trip_activity.trip_id",
+        "n|col|public.trip_activity.created_at"
+      ]
+    },
+    {
+      "statementType": "create_index",
+      "statementTarget": [
+        "index",
+        "public",
+        "trip_invitations",
+        "trip_invitations_pending_idx"
+      ],
+      "writes": [
+        "s|idx|public.trip_invitations_pending_idx",
+        "n|idx|public.trip_invitations_pending_idx",
+        "e|idx|public.trip_invitations_pending_idx",
+        "n|rel|public.trip_invitations_pending_idx"
+      ],
+      "reads": [
+        "n|tbl|public.trip_invitations",
+        "n|sch|public",
+        "n|col|public.trip_invitations.trip_id",
+        "n|col|public.trip_invitations.invitee_id"
+      ]
+    },
+    {
+      "statementType": "create_index",
+      "statementTarget": [
+        "index",
+        "public",
+        "trip_invitations",
+        "trip_invitations_inbox_idx"
+      ],
+      "writes": [
+        "s|idx|public.trip_invitations_inbox_idx",
+        "n|idx|public.trip_invitations_inbox_idx",
+        "e|idx|public.trip_invitations_inbox_idx",
+        "n|rel|public.trip_invitations_inbox_idx"
+      ],
+      "reads": [
+        "n|tbl|public.trip_invitations",
+        "n|sch|public",
+        "n|col|public.trip_invitations.invitee_id",
+        "n|col|public.trip_invitations.status"
+      ]
+    },
+    {
+      "statementType": "create_index",
+      "statementTarget": [
+        "index",
+        "public",
+        "trip_members",
+        "trip_members_trip_user_idx"
+      ],
+      "writes": [
+        "s|idx|public.trip_members_trip_user_idx",
+        "n|idx|public.trip_members_trip_user_idx",
+        "e|idx|public.trip_members_trip_user_idx",
+        "n|rel|public.trip_members_trip_user_idx"
+      ],
+      "reads": [
+        "n|tbl|public.trip_members",
+        "n|sch|public",
+        "n|col|public.trip_members.trip_id",
+        "n|col|public.trip_members.user_id"
+      ]
+    },
+    {
+      "statementType": "create_index",
+      "statementTarget": [
+        "index",
+        "public",
+        "trip_members",
+        "trip_members_user_idx"
+      ],
+      "writes": [
+        "s|idx|public.trip_members_user_idx",
+        "n|idx|public.trip_members_user_idx",
+        "e|idx|public.trip_members_user_idx",
+        "n|rel|public.trip_members_user_idx"
+      ],
+      "reads": [
+        "n|tbl|public.trip_members",
+        "n|sch|public",
+        "n|col|public.trip_members.user_id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "expenses"
+      ],
+      "writes": [
+        "s|fk|public.expenses.expenses_trip_id_trips_id_fkey",
+        "n|fk|public.expenses.expenses_trip_id_trips_id_fkey",
+        "e|fk|public.expenses.expenses_trip_id_trips_id_fkey",
+        "n|con|public.expenses.expenses_trip_id_trips_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.expenses",
+        "n|sch|public",
+        "n|tbl|public.trips",
+        "n|sch|public",
+        "n|col|public.expenses.trip_id",
+        "n|col|public.trips.id",
+        "e|uniqueness|public.trips.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "expenses"
+      ],
+      "writes": [
+        "s|fk|public.expenses.expenses_category_id_expense_categories_id_fkey",
+        "n|fk|public.expenses.expenses_category_id_expense_categories_id_fkey",
+        "e|fk|public.expenses.expenses_category_id_expense_categories_id_fkey",
+        "n|con|public.expenses.expenses_category_id_expense_categories_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.expenses",
+        "n|sch|public",
+        "n|tbl|public.expense_categories",
+        "n|sch|public",
+        "n|col|public.expenses.category_id",
+        "n|col|public.expense_categories.id",
+        "e|uniqueness|public.expense_categories.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "expenses"
+      ],
+      "writes": [
+        "s|fk|public.expenses.expenses_paid_by_trip_members_id_fkey",
+        "n|fk|public.expenses.expenses_paid_by_trip_members_id_fkey",
+        "e|fk|public.expenses.expenses_paid_by_trip_members_id_fkey",
+        "n|con|public.expenses.expenses_paid_by_trip_members_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.expenses",
+        "n|sch|public",
+        "n|tbl|public.trip_members",
+        "n|sch|public",
+        "n|col|public.expenses.paid_by",
+        "n|col|public.trip_members.id",
+        "e|uniqueness|public.trip_members.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "expense_categories"
+      ],
+      "writes": [
+        "s|fk|public.expense_categories.expense_categories_trip_id_trips_id_fkey",
+        "n|fk|public.expense_categories.expense_categories_trip_id_trips_id_fkey",
+        "e|fk|public.expense_categories.expense_categories_trip_id_trips_id_fkey",
+        "n|con|public.expense_categories.expense_categories_trip_id_trips_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.expense_categories",
+        "n|sch|public",
+        "n|tbl|public.trips",
+        "n|sch|public",
+        "n|col|public.expense_categories.trip_id",
+        "n|col|public.trips.id",
+        "e|uniqueness|public.trips.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "expense_splits"
+      ],
+      "writes": [
+        "s|fk|public.expense_splits.expense_splits_expense_id_expenses_id_fkey",
+        "n|fk|public.expense_splits.expense_splits_expense_id_expenses_id_fkey",
+        "e|fk|public.expense_splits.expense_splits_expense_id_expenses_id_fkey",
+        "n|con|public.expense_splits.expense_splits_expense_id_expenses_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.expense_splits",
+        "n|sch|public",
+        "n|tbl|public.expenses",
+        "n|sch|public",
+        "n|col|public.expense_splits.expense_id",
+        "n|col|public.expenses.id",
+        "e|uniqueness|public.expenses.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "expense_splits"
+      ],
+      "writes": [
+        "s|fk|public.expense_splits.expense_splits_member_id_trip_members_id_fkey",
+        "n|fk|public.expense_splits.expense_splits_member_id_trip_members_id_fkey",
+        "e|fk|public.expense_splits.expense_splits_member_id_trip_members_id_fkey",
+        "n|con|public.expense_splits.expense_splits_member_id_trip_members_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.expense_splits",
+        "n|sch|public",
+        "n|tbl|public.trip_members",
+        "n|sch|public",
+        "n|col|public.expense_splits.member_id",
+        "n|col|public.trip_members.id",
+        "e|uniqueness|public.trip_members.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "trip_activity"
+      ],
+      "writes": [
+        "s|fk|public.trip_activity.trip_activity_trip_id_trips_id_fkey",
+        "n|fk|public.trip_activity.trip_activity_trip_id_trips_id_fkey",
+        "e|fk|public.trip_activity.trip_activity_trip_id_trips_id_fkey",
+        "n|con|public.trip_activity.trip_activity_trip_id_trips_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.trip_activity",
+        "n|sch|public",
+        "n|tbl|public.trips",
+        "n|sch|public",
+        "n|col|public.trip_activity.trip_id",
+        "n|col|public.trips.id",
+        "e|uniqueness|public.trips.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "trip_activity"
+      ],
+      "writes": [
+        "s|fk|public.trip_activity.trip_activity_actor_id_user_id_fkey",
+        "n|fk|public.trip_activity.trip_activity_actor_id_user_id_fkey",
+        "e|fk|public.trip_activity.trip_activity_actor_id_user_id_fkey",
+        "n|con|public.trip_activity.trip_activity_actor_id_user_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.trip_activity",
+        "n|sch|public",
+        "n|tbl|public.user",
+        "n|sch|public",
+        "n|col|public.trip_activity.actor_id",
+        "n|col|public.user.id",
+        "e|uniqueness|public.user.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "trip_activity"
+      ],
+      "writes": [
+        "s|fk|public.trip_activity.trip_activity_expense_id_expenses_id_fkey",
+        "n|fk|public.trip_activity.trip_activity_expense_id_expenses_id_fkey",
+        "e|fk|public.trip_activity.trip_activity_expense_id_expenses_id_fkey",
+        "n|con|public.trip_activity.trip_activity_expense_id_expenses_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.trip_activity",
+        "n|sch|public",
+        "n|tbl|public.expenses",
+        "n|sch|public",
+        "n|col|public.trip_activity.expense_id",
+        "n|col|public.expenses.id",
+        "e|uniqueness|public.expenses.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "trip_invitations"
+      ],
+      "writes": [
+        "s|fk|public.trip_invitations.trip_invitations_trip_id_trips_id_fkey",
+        "n|fk|public.trip_invitations.trip_invitations_trip_id_trips_id_fkey",
+        "e|fk|public.trip_invitations.trip_invitations_trip_id_trips_id_fkey",
+        "n|con|public.trip_invitations.trip_invitations_trip_id_trips_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.trip_invitations",
+        "n|sch|public",
+        "n|tbl|public.trips",
+        "n|sch|public",
+        "n|col|public.trip_invitations.trip_id",
+        "n|col|public.trips.id",
+        "e|uniqueness|public.trips.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "trip_invitations"
+      ],
+      "writes": [
+        "s|fk|public.trip_invitations.trip_invitations_invitee_id_user_id_fkey",
+        "n|fk|public.trip_invitations.trip_invitations_invitee_id_user_id_fkey",
+        "e|fk|public.trip_invitations.trip_invitations_invitee_id_user_id_fkey",
+        "n|con|public.trip_invitations.trip_invitations_invitee_id_user_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.trip_invitations",
+        "n|sch|public",
+        "n|tbl|public.user",
+        "n|sch|public",
+        "n|col|public.trip_invitations.invitee_id",
+        "n|col|public.user.id",
+        "e|uniqueness|public.user.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "trip_invitations"
+      ],
+      "writes": [
+        "s|fk|public.trip_invitations.trip_invitations_inviter_id_user_id_fkey",
+        "n|fk|public.trip_invitations.trip_invitations_inviter_id_user_id_fkey",
+        "e|fk|public.trip_invitations.trip_invitations_inviter_id_user_id_fkey",
+        "n|con|public.trip_invitations.trip_invitations_inviter_id_user_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.trip_invitations",
+        "n|sch|public",
+        "n|tbl|public.user",
+        "n|sch|public",
+        "n|col|public.trip_invitations.inviter_id",
+        "n|col|public.user.id",
+        "e|uniqueness|public.user.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "trip_members"
+      ],
+      "writes": [
+        "s|fk|public.trip_members.trip_members_trip_id_trips_id_fkey",
+        "n|fk|public.trip_members.trip_members_trip_id_trips_id_fkey",
+        "e|fk|public.trip_members.trip_members_trip_id_trips_id_fkey",
+        "n|con|public.trip_members.trip_members_trip_id_trips_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.trip_members",
+        "n|sch|public",
+        "n|tbl|public.trips",
+        "n|sch|public",
+        "n|col|public.trip_members.trip_id",
+        "n|col|public.trips.id",
+        "e|uniqueness|public.trips.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "trip_members"
+      ],
+      "writes": [
+        "s|fk|public.trip_members.trip_members_user_id_user_id_fkey",
+        "n|fk|public.trip_members.trip_members_user_id_user_id_fkey",
+        "e|fk|public.trip_members.trip_members_user_id_user_id_fkey",
+        "n|con|public.trip_members.trip_members_user_id_user_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.trip_members",
+        "n|sch|public",
+        "n|tbl|public.user",
+        "n|sch|public",
+        "n|col|public.trip_members.user_id",
+        "n|col|public.user.id",
+        "e|uniqueness|public.user.id"
+      ]
+    }
+  ],
+  "deltas": [
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "name": "expenses",
+        "isRlsEnabled": false,
+        "entityType": "tables"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "name": "expense_categories",
+        "isRlsEnabled": false,
+        "entityType": "tables"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "name": "expense_splits",
+        "isRlsEnabled": false,
+        "entityType": "tables"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "name": "trips",
+        "isRlsEnabled": false,
+        "entityType": "tables"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "name": "trip_activity",
+        "isRlsEnabled": false,
+        "entityType": "tables"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "name": "trip_invitations",
+        "isRlsEnabled": false,
+        "entityType": "tables"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "name": "trip_members",
+        "isRlsEnabled": false,
+        "entityType": "tables"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expenses",
+        "name": "id",
+        "type": "uuid",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": "gen_random_uuid()",
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expenses",
+        "name": "trip_id",
+        "type": "uuid",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expenses",
+        "name": "category_id",
+        "type": "uuid",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expenses",
+        "name": "paid_by",
+        "type": "uuid",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expenses",
+        "name": "title",
+        "type": "text",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expenses",
+        "name": "location",
+        "type": "text",
+        "typeSchema": null,
+        "notNull": false,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expenses",
+        "name": "amount_paise",
+        "type": "bigint",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expenses",
+        "name": "split_type",
+        "type": "text",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expenses",
+        "name": "spent_on",
+        "type": "date",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expenses",
+        "name": "created_at",
+        "type": "timestamp with time zone",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": "now()",
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expense_categories",
+        "name": "id",
+        "type": "uuid",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": "gen_random_uuid()",
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expense_categories",
+        "name": "trip_id",
+        "type": "uuid",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expense_categories",
+        "name": "name",
+        "type": "text",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expense_categories",
+        "name": "icon",
+        "type": "text",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expense_splits",
+        "name": "expense_id",
+        "type": "uuid",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expense_splits",
+        "name": "member_id",
+        "type": "uuid",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expense_splits",
+        "name": "share_paise",
+        "type": "bigint",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expense_splits",
+        "name": "split_value",
+        "type": "bigint",
+        "typeSchema": null,
+        "notNull": false,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trips",
+        "name": "id",
+        "type": "uuid",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": "gen_random_uuid()",
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trips",
+        "name": "name",
+        "type": "text",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trips",
+        "name": "destination",
+        "type": "text",
+        "typeSchema": null,
+        "notNull": false,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trips",
+        "name": "currency",
+        "type": "text",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": "'INR'",
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trips",
+        "name": "created_at",
+        "type": "timestamp with time zone",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": "now()",
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_activity",
+        "name": "id",
+        "type": "uuid",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": "gen_random_uuid()",
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_activity",
+        "name": "trip_id",
+        "type": "uuid",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_activity",
+        "name": "actor_id",
+        "type": "text",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_activity",
+        "name": "action",
+        "type": "text",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_activity",
+        "name": "subject",
+        "type": "text",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_activity",
+        "name": "expense_id",
+        "type": "uuid",
+        "typeSchema": null,
+        "notNull": false,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_activity",
+        "name": "created_at",
+        "type": "timestamp with time zone",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": "now()",
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_invitations",
+        "name": "id",
+        "type": "uuid",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": "gen_random_uuid()",
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_invitations",
+        "name": "trip_id",
+        "type": "uuid",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_invitations",
+        "name": "invitee_id",
+        "type": "text",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_invitations",
+        "name": "inviter_id",
+        "type": "text",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_invitations",
+        "name": "status",
+        "type": "text",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": "'pending'",
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_invitations",
+        "name": "created_at",
+        "type": "timestamp with time zone",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": "now()",
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_invitations",
+        "name": "responded_at",
+        "type": "timestamp with time zone",
+        "typeSchema": null,
+        "notNull": false,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_members",
+        "name": "id",
+        "type": "uuid",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": "gen_random_uuid()",
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_members",
+        "name": "trip_id",
+        "type": "uuid",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_members",
+        "name": "user_id",
+        "type": "text",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_members",
+        "name": "role",
+        "type": "text",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_members",
+        "name": "joined_at",
+        "type": "timestamp with time zone",
+        "typeSchema": null,
+        "notNull": true,
+        "dimensions": 0,
+        "default": "now()",
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expenses",
+        "name": "expenses_trip_date_idx",
+        "nameExplicit": true,
+        "columns": [
+          {
+            "value": "trip_id",
+            "isExpression": false,
+            "asc": true,
+            "nullsFirst": false,
+            "opclass": null
+          },
+          {
+            "value": "spent_on",
+            "isExpression": false,
+            "asc": true,
+            "nullsFirst": false,
+            "opclass": null
+          },
+          {
+            "value": "created_at",
+            "isExpression": false,
+            "asc": true,
+            "nullsFirst": false,
+            "opclass": null
+          }
+        ],
+        "isUnique": false,
+        "where": null,
+        "with": "",
+        "method": "btree",
+        "concurrently": false,
+        "entityType": "indexes"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expense_categories",
+        "name": "expense_categories_trip_name_idx",
+        "nameExplicit": true,
+        "columns": [
+          {
+            "value": "trip_id",
+            "isExpression": false,
+            "asc": true,
+            "nullsFirst": false,
+            "opclass": null
+          },
+          {
+            "value": "lower(\"name\")",
+            "isExpression": true,
+            "asc": true,
+            "nullsFirst": false,
+            "opclass": null
+          }
+        ],
+        "isUnique": true,
+        "where": null,
+        "with": "",
+        "method": "btree",
+        "concurrently": false,
+        "entityType": "indexes"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expense_splits",
+        "name": "expense_splits_member_idx",
+        "nameExplicit": true,
+        "columns": [
+          {
+            "value": "member_id",
+            "isExpression": false,
+            "asc": true,
+            "nullsFirst": false,
+            "opclass": null
+          }
+        ],
+        "isUnique": false,
+        "where": null,
+        "with": "",
+        "method": "btree",
+        "concurrently": false,
+        "entityType": "indexes"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_activity",
+        "name": "trip_activity_date_idx",
+        "nameExplicit": true,
+        "columns": [
+          {
+            "value": "trip_id",
+            "isExpression": false,
+            "asc": true,
+            "nullsFirst": false,
+            "opclass": null
+          },
+          {
+            "value": "created_at",
+            "isExpression": false,
+            "asc": true,
+            "nullsFirst": false,
+            "opclass": null
+          }
+        ],
+        "isUnique": false,
+        "where": null,
+        "with": "",
+        "method": "btree",
+        "concurrently": false,
+        "entityType": "indexes"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_invitations",
+        "name": "trip_invitations_pending_idx",
+        "nameExplicit": true,
+        "columns": [
+          {
+            "value": "trip_id",
+            "isExpression": false,
+            "asc": true,
+            "nullsFirst": false,
+            "opclass": null
+          },
+          {
+            "value": "invitee_id",
+            "isExpression": false,
+            "asc": true,
+            "nullsFirst": false,
+            "opclass": null
+          }
+        ],
+        "isUnique": true,
+        "where": "\"status\" = 'pending'",
+        "with": "",
+        "method": "btree",
+        "concurrently": false,
+        "entityType": "indexes"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_invitations",
+        "name": "trip_invitations_inbox_idx",
+        "nameExplicit": true,
+        "columns": [
+          {
+            "value": "invitee_id",
+            "isExpression": false,
+            "asc": true,
+            "nullsFirst": false,
+            "opclass": null
+          },
+          {
+            "value": "status",
+            "isExpression": false,
+            "asc": true,
+            "nullsFirst": false,
+            "opclass": null
+          }
+        ],
+        "isUnique": false,
+        "where": null,
+        "with": "",
+        "method": "btree",
+        "concurrently": false,
+        "entityType": "indexes"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_members",
+        "name": "trip_members_trip_user_idx",
+        "nameExplicit": true,
+        "columns": [
+          {
+            "value": "trip_id",
+            "isExpression": false,
+            "asc": true,
+            "nullsFirst": false,
+            "opclass": null
+          },
+          {
+            "value": "user_id",
+            "isExpression": false,
+            "asc": true,
+            "nullsFirst": false,
+            "opclass": null
+          }
+        ],
+        "isUnique": true,
+        "where": null,
+        "with": "",
+        "method": "btree",
+        "concurrently": false,
+        "entityType": "indexes"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_members",
+        "name": "trip_members_user_idx",
+        "nameExplicit": true,
+        "columns": [
+          {
+            "value": "user_id",
+            "isExpression": false,
+            "asc": true,
+            "nullsFirst": false,
+            "opclass": null
+          }
+        ],
+        "isUnique": false,
+        "where": null,
+        "with": "",
+        "method": "btree",
+        "concurrently": false,
+        "entityType": "indexes"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expenses",
+        "name": "expenses_trip_id_trips_id_fkey",
+        "nameExplicit": false,
+        "columns": [
+          "trip_id"
+        ],
+        "schemaTo": "public",
+        "tableTo": "trips",
+        "columnsTo": [
+          "id"
+        ],
+        "onUpdate": "NO ACTION",
+        "onDelete": "CASCADE",
+        "entityType": "fks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expenses",
+        "name": "expenses_category_id_expense_categories_id_fkey",
+        "nameExplicit": false,
+        "columns": [
+          "category_id"
+        ],
+        "schemaTo": "public",
+        "tableTo": "expense_categories",
+        "columnsTo": [
+          "id"
+        ],
+        "onUpdate": "NO ACTION",
+        "onDelete": "NO ACTION",
+        "entityType": "fks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expenses",
+        "name": "expenses_paid_by_trip_members_id_fkey",
+        "nameExplicit": false,
+        "columns": [
+          "paid_by"
+        ],
+        "schemaTo": "public",
+        "tableTo": "trip_members",
+        "columnsTo": [
+          "id"
+        ],
+        "onUpdate": "NO ACTION",
+        "onDelete": "NO ACTION",
+        "entityType": "fks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expense_categories",
+        "name": "expense_categories_trip_id_trips_id_fkey",
+        "nameExplicit": false,
+        "columns": [
+          "trip_id"
+        ],
+        "schemaTo": "public",
+        "tableTo": "trips",
+        "columnsTo": [
+          "id"
+        ],
+        "onUpdate": "NO ACTION",
+        "onDelete": "CASCADE",
+        "entityType": "fks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expense_splits",
+        "name": "expense_splits_expense_id_expenses_id_fkey",
+        "nameExplicit": false,
+        "columns": [
+          "expense_id"
+        ],
+        "schemaTo": "public",
+        "tableTo": "expenses",
+        "columnsTo": [
+          "id"
+        ],
+        "onUpdate": "NO ACTION",
+        "onDelete": "CASCADE",
+        "entityType": "fks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expense_splits",
+        "name": "expense_splits_member_id_trip_members_id_fkey",
+        "nameExplicit": false,
+        "columns": [
+          "member_id"
+        ],
+        "schemaTo": "public",
+        "tableTo": "trip_members",
+        "columnsTo": [
+          "id"
+        ],
+        "onUpdate": "NO ACTION",
+        "onDelete": "NO ACTION",
+        "entityType": "fks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_activity",
+        "name": "trip_activity_trip_id_trips_id_fkey",
+        "nameExplicit": false,
+        "columns": [
+          "trip_id"
+        ],
+        "schemaTo": "public",
+        "tableTo": "trips",
+        "columnsTo": [
+          "id"
+        ],
+        "onUpdate": "NO ACTION",
+        "onDelete": "CASCADE",
+        "entityType": "fks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_activity",
+        "name": "trip_activity_actor_id_user_id_fkey",
+        "nameExplicit": false,
+        "columns": [
+          "actor_id"
+        ],
+        "schemaTo": "public",
+        "tableTo": "user",
+        "columnsTo": [
+          "id"
+        ],
+        "onUpdate": "NO ACTION",
+        "onDelete": "NO ACTION",
+        "entityType": "fks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_activity",
+        "name": "trip_activity_expense_id_expenses_id_fkey",
+        "nameExplicit": false,
+        "columns": [
+          "expense_id"
+        ],
+        "schemaTo": "public",
+        "tableTo": "expenses",
+        "columnsTo": [
+          "id"
+        ],
+        "onUpdate": "NO ACTION",
+        "onDelete": "NO ACTION",
+        "entityType": "fks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_invitations",
+        "name": "trip_invitations_trip_id_trips_id_fkey",
+        "nameExplicit": false,
+        "columns": [
+          "trip_id"
+        ],
+        "schemaTo": "public",
+        "tableTo": "trips",
+        "columnsTo": [
+          "id"
+        ],
+        "onUpdate": "NO ACTION",
+        "onDelete": "CASCADE",
+        "entityType": "fks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_invitations",
+        "name": "trip_invitations_invitee_id_user_id_fkey",
+        "nameExplicit": false,
+        "columns": [
+          "invitee_id"
+        ],
+        "schemaTo": "public",
+        "tableTo": "user",
+        "columnsTo": [
+          "id"
+        ],
+        "onUpdate": "NO ACTION",
+        "onDelete": "NO ACTION",
+        "entityType": "fks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_invitations",
+        "name": "trip_invitations_inviter_id_user_id_fkey",
+        "nameExplicit": false,
+        "columns": [
+          "inviter_id"
+        ],
+        "schemaTo": "public",
+        "tableTo": "user",
+        "columnsTo": [
+          "id"
+        ],
+        "onUpdate": "NO ACTION",
+        "onDelete": "NO ACTION",
+        "entityType": "fks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_members",
+        "name": "trip_members_trip_id_trips_id_fkey",
+        "nameExplicit": false,
+        "columns": [
+          "trip_id"
+        ],
+        "schemaTo": "public",
+        "tableTo": "trips",
+        "columnsTo": [
+          "id"
+        ],
+        "onUpdate": "NO ACTION",
+        "onDelete": "CASCADE",
+        "entityType": "fks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_members",
+        "name": "trip_members_user_id_user_id_fkey",
+        "nameExplicit": false,
+        "columns": [
+          "user_id"
+        ],
+        "schemaTo": "public",
+        "tableTo": "user",
+        "columnsTo": [
+          "id"
+        ],
+        "onUpdate": "NO ACTION",
+        "onDelete": "NO ACTION",
+        "entityType": "fks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expense_splits",
+        "name": "expense_splits_pkey",
+        "columns": [
+          "expense_id",
+          "member_id"
+        ],
+        "nameExplicit": false,
+        "entityType": "pks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expenses",
+        "name": "expenses_pkey",
+        "columns": [
+          "id"
+        ],
+        "nameExplicit": false,
+        "entityType": "pks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expense_categories",
+        "name": "expense_categories_pkey",
+        "columns": [
+          "id"
+        ],
+        "nameExplicit": false,
+        "entityType": "pks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trips",
+        "name": "trips_pkey",
+        "columns": [
+          "id"
+        ],
+        "nameExplicit": false,
+        "entityType": "pks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_activity",
+        "name": "trip_activity_pkey",
+        "columns": [
+          "id"
+        ],
+        "nameExplicit": false,
+        "entityType": "pks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_invitations",
+        "name": "trip_invitations_pkey",
+        "columns": [
+          "id"
+        ],
+        "nameExplicit": false,
+        "entityType": "pks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "trip_members",
+        "name": "trip_members_pkey",
+        "columns": [
+          "id"
+        ],
+        "nameExplicit": false,
+        "entityType": "pks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expenses",
+        "name": "expenses_positive_amount",
+        "value": "\"amount_paise\" > 0",
+        "entityType": "checks"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "expense_splits",
+        "name": "expense_splits_nonnegative_share",
+        "value": "\"share_paise\" >= 0",
+        "entityType": "checks"
+      }
+    }
+  ]
+}
