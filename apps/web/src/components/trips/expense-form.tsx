@@ -7,15 +7,26 @@ import {
 	FieldGroup,
 	FieldLabel,
 } from "@tripo/ui/components/field";
-import { Input } from "@tripo/ui/components/input";
 import Link from "next/link";
 import { type ChangeEvent, useCallback, useState } from "react";
 
 import { addExpense } from "@/app/dashboard/actions";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import {
+	Select,
+	SelectContent,
+	SelectGroup,
+	SelectItem,
+	SelectTrigger,
+	SelectValue,
+} from "@/components/ui/select";
 import {
 	type CategoryIconName,
 	ExpenseCategoryIcon,
 } from "./expense-category-icon";
+import { ExpenseDatePicker } from "./expense-date-picker";
 import { type ExpenseMember, ExpenseSplitFields } from "./expense-split-fields";
 import { useTripForm } from "./use-trip-form";
 
@@ -23,16 +34,6 @@ interface Category {
 	icon: CategoryIconName;
 	id: string;
 	name: string;
-}
-
-function setLocalDate(input: HTMLInputElement | null) {
-	if (input && !input.value) {
-		const date = new Date();
-		const localDate = new Date(
-			date.getTime() - date.getTimezoneOffset() * 60_000
-		);
-		input.value = localDate.toISOString().slice(0, 10);
-	}
 }
 
 export function ExpenseForm({
@@ -53,13 +54,16 @@ export function ExpenseForm({
 		categories.find(({ icon }) => icon === "other")?.id ?? "new"
 	);
 	const { error, pending, submit } = useTripForm(addExpense.bind(null, tripId));
+	const payers = members.map(({ id, name }) => ({ label: name, value: id }));
 
 	const changeAmount = useCallback((event: ChangeEvent<HTMLInputElement>) => {
 		setAmount(event.currentTarget.value);
 	}, []);
 
-	const changeCategory = useCallback((event: ChangeEvent<HTMLInputElement>) => {
-		setCategory(event.currentTarget.value);
+	const changeCategory = useCallback((value: unknown) => {
+		if (typeof value === "string") {
+			setCategory(value);
+		}
 	}, []);
 
 	return (
@@ -68,7 +72,7 @@ export function ExpenseForm({
 				<Field>
 					<FieldLabel htmlFor="expense-title">Title</FieldLabel>
 					<Input
-						className="trip-control"
+						className="h-11"
 						id="expense-title"
 						maxLength={120}
 						name="title"
@@ -82,7 +86,7 @@ export function ExpenseForm({
 							Amount ({currency})
 						</FieldLabel>
 						<Input
-							className="trip-control tabular-nums"
+							className="h-11 tabular-nums"
 							id="expense-amount"
 							inputMode="decimal"
 							maxLength={12}
@@ -95,39 +99,41 @@ export function ExpenseForm({
 					</Field>
 					<Field>
 						<FieldLabel htmlFor="expense-date">Date paid</FieldLabel>
-						<Input
-							className="trip-control tabular-nums"
-							id="expense-date"
-							name="spentOn"
-							ref={setLocalDate}
-							required
-							type="date"
-						/>
+						<ExpenseDatePicker id="expense-date" />
 					</Field>
 				</div>
 				<div className="grid gap-4 sm:grid-cols-2">
 					<Field>
 						<FieldLabel htmlFor="expense-payer">Paid by</FieldLabel>
-						<select
-							className="trip-control"
+						<Select
 							defaultValue={defaultPayer}
-							id="expense-payer"
+							items={payers}
 							name="paidBy"
 							required
 						>
-							{members.map(({ id, name }) => (
-								<option key={id} value={id}>
-									{name}
-								</option>
-							))}
-						</select>
+							<SelectTrigger
+								className="w-full data-[size=default]:h-11"
+								id="expense-payer"
+							>
+								<SelectValue placeholder="Select payer" />
+							</SelectTrigger>
+							<SelectContent>
+								<SelectGroup>
+									{payers.map(({ label, value }) => (
+										<SelectItem key={value} value={value}>
+											{label}
+										</SelectItem>
+									))}
+								</SelectGroup>
+							</SelectContent>
+						</Select>
 					</Field>
 					<Field>
 						<FieldLabel htmlFor="expense-location">
 							Place <span className="text-muted-foreground">(optional)</span>
 						</FieldLabel>
 						<Input
-							className="trip-control"
+							className="h-11"
 							id="expense-location"
 							maxLength={120}
 							name="location"
@@ -135,19 +141,29 @@ export function ExpenseForm({
 					</Field>
 				</div>
 				<fieldset className="min-w-0">
-					<legend className="mb-2 font-medium text-sm">Category</legend>
-					<div className="flex flex-wrap gap-2">
+					<legend
+						className="mb-2 font-medium text-sm"
+						id="expense-category-label"
+					>
+						Category
+					</legend>
+					<RadioGroup
+						aria-labelledby="expense-category-label"
+						className="flex flex-wrap gap-2"
+						name="category"
+						onValueChange={changeCategory}
+						value={category}
+					>
 						{categories.map(({ id, icon, name }) => (
-							<label
-								className="relative inline-flex min-h-10 cursor-pointer items-center gap-1.5 rounded-md border border-border bg-card px-3 text-sm hover:border-primary/60 has-checked:border-primary has-checked:bg-accent/40 has-focus-visible:outline-2 has-focus-visible:outline-ring"
+							<FieldLabel
+								className="flex min-h-10 cursor-pointer items-center gap-2 rounded-md border border-border bg-card px-3 text-sm hover:border-primary/60 data-[selected=true]:border-primary data-[selected=true]:bg-accent/40"
+								data-selected={category === id}
+								htmlFor={`expense-category-${id}`}
 								key={id}
 							>
-								<input
-									checked={category === id}
-									className="sr-only"
-									name="category"
-									onChange={changeCategory}
-									type="radio"
+								<RadioGroupItem
+									aria-label={name}
+									id={`expense-category-${id}`}
 									value={id}
 								/>
 								<ExpenseCategoryIcon
@@ -155,26 +171,27 @@ export function ExpenseForm({
 									icon={icon}
 								/>
 								<span className="wrap-anywhere">{name}</span>
-							</label>
+							</FieldLabel>
 						))}
-						<label className="relative inline-flex min-h-10 cursor-pointer items-center gap-1.5 rounded-md border border-border border-dashed px-3 text-primary text-sm hover:border-primary/60 has-checked:border-primary has-checked:bg-accent/40 has-focus-visible:outline-2 has-focus-visible:outline-ring">
-							<input
-								checked={category === "new"}
-								className="sr-only"
-								name="category"
-								onChange={changeCategory}
-								type="radio"
+						<FieldLabel
+							className="flex min-h-10 cursor-pointer items-center gap-2 rounded-md border border-border border-dashed px-3 text-primary text-sm hover:border-primary/60 data-[selected=true]:border-primary data-[selected=true]:bg-accent/40"
+							data-selected={category === "new"}
+							htmlFor="expense-category-new"
+						>
+							<RadioGroupItem
+								aria-label="Add category"
+								id="expense-category-new"
 								value="new"
 							/>
 							<RiAddLine aria-hidden="true" className="size-4" />
 							Add category
-						</label>
-					</div>
+						</FieldLabel>
+					</RadioGroup>
 					{category === "new" ? (
 						<Field className="mt-3 max-w-xs">
 							<FieldLabel htmlFor="category-name">Category name</FieldLabel>
 							<Input
-								className="trip-control"
+								className="h-11"
 								id="category-name"
 								maxLength={50}
 								name="categoryName"
@@ -191,15 +208,17 @@ export function ExpenseForm({
 			/>
 			{error ? <FieldError>{error}</FieldError> : null}
 			<div className="flex flex-wrap gap-2">
-				<button className="site-button" disabled={pending} type="submit">
+				<Button className="h-11 px-4" disabled={pending} type="submit">
 					{pending ? "Saving…" : "Save expense"}
-				</button>
-				<Link
-					className="site-button site-button--secondary"
-					href={`/dashboard/trips/${tripId}`}
+				</Button>
+				<Button
+					className="h-11 px-4"
+					nativeButton={false}
+					render={<Link href={`/dashboard/trips/${tripId}`} />}
+					variant="outline"
 				>
 					Cancel
-				</Link>
+				</Button>
 			</div>
 		</form>
 	);
