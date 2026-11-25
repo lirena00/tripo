@@ -1,4 +1,8 @@
-import { RiArrowDownSLine, RiReceiptLine } from "@remixicon/react";
+import {
+	RiArrowDownSLine,
+	RiDownloadLine,
+	RiReceiptLine,
+} from "@remixicon/react";
 
 import type { getTripExpenses } from "@/lib/trip-queries";
 import { SPLIT_METHODS } from "@/lib/trip-splits";
@@ -11,9 +15,11 @@ type Expenses = Awaited<ReturnType<typeof getTripExpenses>>;
 export function TripExpenses({
 	currency,
 	expenses,
+	tripId,
 }: {
 	currency: string;
 	expenses: Expenses;
+	tripId: string;
 }) {
 	if (!expenses.length) {
 		return (
@@ -33,17 +39,28 @@ export function TripExpenses({
 	const total = expenses.reduce((sum, item) => sum + item.amountPaise, 0);
 	return (
 		<section aria-labelledby="expenses-heading">
-			<div className="mb-3 flex items-baseline justify-between gap-4">
-				<h2 className="font-medium" id="expenses-heading">
-					Expenses
-				</h2>
-				<p className="text-muted-foreground text-sm">
-					Total{" "}
-					<strong className="ml-1 font-semibold text-foreground tabular-nums">
-						{formatMoney(total, currency)}
-					</strong>
-				</p>
+			<div className="mb-3 flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+				<div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+					<h2 className="font-medium" id="expenses-heading">
+						Expenses
+					</h2>
+					<p className="text-muted-foreground text-sm">
+						Total{" "}
+						<strong className="font-semibold text-foreground tabular-nums">
+							{formatMoney(total, currency)}
+						</strong>
+					</p>
+				</div>
+				<a
+					className="site-button site-button--small site-button--secondary"
+					download
+					href={`/api/trips/${tripId}/expenses/export`}
+				>
+					<RiDownloadLine aria-hidden="true" className="size-4" />
+					Export CSV
+				</a>
 			</div>
+			<ExpenseInsights currency={currency} expenses={expenses} total={total} />
 			<ul className="divide-y divide-border overflow-hidden rounded-xl border border-border bg-card">
 				{expenses.map((item) => (
 					<li key={item.id}>
@@ -104,7 +121,6 @@ export function TripExpenses({
 					</li>
 				))}
 			</ul>
-			<ExpenseInsights currency={currency} expenses={expenses} />
 		</section>
 	);
 }

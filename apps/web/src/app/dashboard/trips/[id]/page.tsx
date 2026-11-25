@@ -105,6 +105,10 @@ async function TripSection({
 		);
 	}
 	return (
-		<TripExpenses currency={currency} expenses={await getTripExpenses(id)} />
+		<TripExpenses
+			currency={currency}
+			expenses={await getTripExpenses(id)}
+			tripId={id}
+		/>
 	);
 }
